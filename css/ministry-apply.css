@@ -1,0 +1,48 @@
+.ministry-form .mf-component {
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.ministry-form .mf-component .header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.ministry-form .mf-component .header .number {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ministry-form .mf-component .header .number.active {
+  background-color: #f5fff9;
+  border: 1px solid #f4f6f9;
+}
+
+button.one-info {
+  background: #f7ffed;
+  padding: 10px;
+}
+
+.ministry-form .mf-component.three-four .kotojon-khotian {
+  max-width: 280px;
+}
+
+.ministry-form .mf-component.three-four .kotojon-khotian input {
+  font-size: 12px;
+  padding: 20px 14px;
+}
+.ministry-form .mf-component.three-four .kotojon-khotian button {
+  background-color: #0db14b;
+  color: white;
+  width: 108px;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

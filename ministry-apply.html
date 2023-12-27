@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/responsive.css?v=20220422300">
     <link rel="stylesheet" href="css/home-responsive.css?v=20230921967">
 
+    <link rel="stylesheet" href="./css/ministry-apply.css">
+
 </head>
 
 <body>
@@ -67,6 +69,128 @@
                             </nav>
                         </div>
                     </div>
+                </div>
+
+                <div class="container">
+                    <div class="ministry-form">
+
+                        <!-- start component one -->
+                        <div class="mf-component">
+                            <div class="header">
+                                <p class="number active">১</p>
+                                <p class="title">আপনি কোন ধরণের মিউটেশন আবেদন করবেন?
+                                </p>
+                                <div>
+                                    <div class="bs_checkbox border px-2 py-1 rounded"><input type="checkbox"
+                                            id="c-one-1" class="form-check-input ownership_reference_check"
+                                            value="c-one-1">
+                                        <label for="c-one-1" class="form-check-label">নামজারি</label>
+                                    </div>
+                                    <div class="bs_checkbox border px-2 py-1 rounded"><input type="checkbox"
+                                            id="c-one-2" class="form-check-input ownership_reference_check"
+                                            value="c-one-2">
+                                        <label for="c-one-2" class="form-check-label">জমা খারিজ </label>
+                                    </div>
+                                    <div class="bs_checkbox border px-2 py-1 rounded"><input type="checkbox"
+                                            id="c-one-3" class="form-check-input ownership_reference_check"
+                                            value="c-one-3">
+                                        <label for="c-one-3" class="form-check-label">জমা একত্রীকরণ </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <button class="one-info btn" data-bs-target="#exampleModalToggle"
+                                    data-bs-toggle="modal">
+                                    <img src="./images/information-icon.svg" alt="information-icon">
+                                    <span class="pl-1 text-primary">জানতে ক্লিক করুন</span>
+                                    </spa>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end component one -->
+
+                        <!-- start component two -->
+                        <div class="mf-component">
+                            <div class="header">
+                                <p class="number active">২</p>
+                                <p class="title">যে সূত্রে মিউটেশন আবেদন করবেন সেটা নির্বাচন করুনঃ
+                                </p>
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <div class="bs_checkbox"><input type="checkbox" id="c-tow-1"
+                                            class="form-check-input ownership_reference_check" value="c-tow-1">
+                                        <label for="c-tow-1" class="form-check-label">ক্রয়</label>
+                                    </div>
+                                    <div class="bs_checkbox"><input type="checkbox" id="c-two-2"
+                                            class="form-check-input ownership_reference_check" value="c-two-2">
+                                        <label for="c-two-2" class="form-check-label">উত্তরাধিকার </label>
+                                    </div>
+
+                                    <div class="bs_checkbox"><input type="checkbox" id="c-two-3"
+                                            class="form-check-input ownership_reference_check" value="c-two-3">
+                                        <label for="c-two-3" class="form-check-label">হেবা</label>
+                                    </div>
+                                    <div class="bs_checkbox"><input type="checkbox" id="c-two-4"
+                                            class="form-check-input ownership_reference_check" value="c-two-4">
+                                        <label for="c-two-4" class="form-check-label">বন্দোবস্ত</label>
+                                    </div>
+                                    <div class="bs_checkbox"><input type="checkbox" id="c-two-5"
+                                            class="form-check-input ownership_reference_check" value="c-two-5">
+                                        <label for="c-two-5" class="form-check-label">এওয়াজ/ বিনিময়</label>
+                                    </div>
+                                    <div class="bs_checkbox"><input type="checkbox" id="c-two-6"
+                                            class="form-check-input ownership_reference_check" value="c-two-6">
+                                        <label for="c-two-6" class="form-check-label">অধিগ্রহণ</label>
+                                    </div>
+                                    <div class="bs_checkbox"><input type="checkbox" id="c-two-7"
+                                            class="form-check-input ownership_reference_check" value="c-two-7">
+                                        <label for="c-two-7" class="form-check-label">আদালত রায়ের</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end component two -->
+
+                        <!-- start component three four -->
+                        <div class="mf-component three-four">
+                            <div class="header">
+                                <p class="number">৩</p>
+                                <p class="title">আপনি কোন ধরণের মিউটেশন আবেদন করবেন?
+                                </p>
+                            </div>
+                            <div class="body mb-4">
+                                <div class="bs_radio border rounded py-1 px-2"><input type="radio" id="is_record_flow"
+                                        value="1" class="form-check-input required_field"> <label for="is_record_flow"
+                                        class="form-check-label">হ্যাঁ</label>
+                                </div>
+                                <div class="bs_radio border rounded py-1 px-2"><input type="radio" id="is_record_flow"
+                                        value="1" class="form-check-input required_field"> <label for="is_record_flow"
+                                        class="form-check-label">না</label>
+                                </div>
+                            </div>
+
+                            <div class="header">
+                                <p class="number">৪</p>
+                                <p class="title">আবেদনকারী/গ্রহীতার তথ্য
+                                </p>
+                            </div>
+                            <div class="body">
+                                <p class="mb-2">আবেদনকারী/গ্রহীতা খতিয়ানে কতজন সংযুক্ত হবে?</p>
+                                <div class="kotojon-khotian">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control form-control-lg"
+                                            placeholder="কতজন সংযুক্ত হবে সংখ্যা লিখুন">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-lg" type="submit">নিশ্চিত করুন</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end component three four -->
+
                 </div>
             </div>
 
