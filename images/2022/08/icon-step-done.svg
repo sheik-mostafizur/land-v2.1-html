@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="Group_19158" data-name="Group 19158" transform="translate(-417 -1020.25)">
+    <g id="Group_19155" data-name="Group 19155" transform="translate(417 1020.25)">
+      <g id="Ellipse_10" data-name="Ellipse 10" fill="#fff" stroke="#42a045" stroke-width="1">
+        <circle cx="17" cy="17" r="17" stroke="none"/>
+        <circle cx="17" cy="17" r="16.5" fill="none"/>
+      </g>
+      <circle id="Ellipse_11" data-name="Ellipse 11" cx="13" cy="13" r="13" transform="translate(4 4)" fill="#42a045"/>
+    </g>
+    <g id="Group_19084" data-name="Group 19084" transform="translate(425.368 1027.768)">
+      <rect id="Rectangle_490" data-name="Rectangle 490" width="12.75" height="13.6" transform="translate(3.28 2.363)" fill="#fff"/>
+      <path id="checkbox" d="M17.983,3.375H6.031A2.659,2.659,0,0,0,3.375,6.031V17.983a2.659,2.659,0,0,0,2.656,2.656H17.983a2.659,2.659,0,0,0,2.656-2.656V6.031A2.659,2.659,0,0,0,17.983,3.375ZM16.5,9.114l-5.578,6.64a.664.664,0,0,1-.5.237h-.011a.664.664,0,0,1-.493-.22l-2.39-2.656a.664.664,0,1,1,.987-.888l1.879,2.088L15.482,8.26a.664.664,0,0,1,1.017.854Z" transform="translate(-3.375 -3.375)" fill="#42a045"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.328" height="14.328" viewBox="0 0 14.328 14.328">
+  <g id="dashboard-reference" transform="translate(-2.25 -2.25)">
+    <path id="Path_41420" data-name="Path 41420" d="M3.188,22.5v.938H5.339L2.25,26.526l.663.663L6,24.1v2.151H6.94V22.5Z" transform="translate(0 -10.611)" fill="#2e7130"/>
+    <path id="Path_41421" data-name="Path 41421" d="M27,23.625h.938V25.97H27Z" transform="translate(-13.235 -11.267)" fill="#2e7130"/>
+    <path id="Path_41422" data-name="Path 41422" d="M22.5,18h.938v4.69H22.5Z" transform="translate(-10.98 -7.987)" fill="#2e7130"/>
+    <path id="Path_41423" data-name="Path 41423" d="M18,20.25h.938V24H18Z" transform="translate(-8.54 -9.299)" fill="#2e7130"/>
+    <path id="Path_41424" data-name="Path 41424" d="M15.555,2.25H3.273A1.024,1.024,0,0,0,2.25,3.273V9.414H3.273V7.879H15.555v7.676H9.414v1.023h6.141a1.025,1.025,0,0,0,1.023-1.023V3.273A1.024,1.024,0,0,0,15.555,2.25ZM7.367,6.856H3.273V3.273H7.367Zm1.023,0V3.273h7.164V6.856Z" fill="#2e7130"/>
+  </g>
+</svg>

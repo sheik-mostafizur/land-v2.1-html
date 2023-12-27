@@ -1,0 +1,41 @@
+*{
+    /*font-family: Kalpurush !important;*/
+    /*font-family: 'KalpurushRegular' !important;*/
+}
+
+.firsttb{
+font-size: 14px;
+
+}
+
+table.fixed { table-layout:fixed; }
+.table th, .table td{
+    padding:5px;
+}
+
+.red-bordered{
+    /*border:1px solid red;*/
+}
+
+.red-bordered:focus {
+    border:1px solid red !important ;
+}
+
+input,textarea,select {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.header-unbold th  {
+    font-weight:normal;
+}
+
+@media only screen and (max-width: 600px) {
+  .sm-screen {
+    width:800px;
+  }
+  .sm-screen-sm-tbl{
+	  width:400px;
+  }
+}
+

@@ -1,0 +1,560 @@
+@media (min-width: 768px){
+	.main-content{
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		min-height: calc(100vh - 296px);
+	}
+	.main-content > div{
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px){
+
+	.row.col-space-40{
+		margin-left: -40px;
+		margin-right: -40px;
+	}
+	.row.col-space-40 .col-space{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.lmt-page-menu .navbar ul li:first-child a{
+		border-radius: 6px 0 0 6px;
+	}
+	.lmt-page-menu .navbar ul li:last-child a{
+		border-radius: 0 6px 6px 0;
+	}
+
+	.terms-step-table .table tr td:first-child{
+		width: 150px;
+	}
+	.terms-step-table .table tr td:nth-child(2){
+		width: 25%;
+	}
+	.terms-step-table .table .steps-title{
+		margin: 0 60px;
+	}
+	.src-info-btn{
+		width: 120px;
+	}
+}
+
+@media (min-width: 1450px){
+	.container{
+		max-width: 1380px !important;
+	}
+	.src-info-btn{
+		width: 150px;
+	}
+}
+
+@media (min-width: 1680px){
+	.container{
+		max-width: 1470px !important;
+	}
+	.src-info-btn{
+		width: 165px;
+	}
+}
+
+
+@media (min-width: 1200px) and (max-width: 1439px){
+	.footer-top .footer-menu ul li a{
+		font-size: 0.85rem;
+	}
+
+	.landinfo-form-content .form-group .form-control,
+	.landinfo-form-content .btn,
+	.landinfo-form-content span,
+	.landinfo-form-content label,
+	.landinfo-form-content .form-group label{
+		font-size: 0.70rem !important;
+	}
+	.landinfo-form-content .landinfo-input-block .landinfo-acor .acor-text{
+		height: 28px;
+		width: 60px !important;
+	}
+	.landinfo-input-block .landinfo-acor .acor-amount{
+		padding-left: 65px !important;
+	}
+	.landinfo-form-content .text-sm{
+		font-size: 0.60rem !important;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+	.footer-top .footer-menu{
+		padding-left: 0;
+	}
+	.header-content .navbar-expand-lg .navbar-nav .nav-link{
+		padding-right: 10px;
+		font-size: 1rem;
+	}
+	.lmt-page-menu .navbar ul li a{
+		font-size: 1rem;
+	}
+	.site-main .main-header .navbar .navbar-brand{
+		width: 140px;
+	}
+	.header-search{
+		max-width: 170px;
+	}
+
+	.terms-step-table .table tr td:first-child{
+		width: 100px;
+	}
+	.terms-step-table .table tr td:nth-child(2){
+		width: 30%;
+	}
+	.terms-step-table .table .steps-title{
+		margin: 0 30px;
+	}
+}
+@media (max-width: 1199px){
+	.landinfo-content .landinfo-body{
+		width: 100%;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.landinfo-form-content{
+		width: 1080px;
+		max-width: 1080px;
+		min-width: 1080px;
+		padding-right: 1.5rem;
+	}
+
+	.landinfo-form-content .form-group .form-control,
+	.landinfo-form-content .btn,
+	.landinfo-form-content span,
+	.landinfo-form-content label,
+	.landinfo-form-content .form-group label{
+		font-size: 0.70rem !important;
+	}
+    .landinfo-form-content .form-group .form-control{
+
+        width:100% !important;
+    }
+    .landinfo-form-content .form-group .form-control.li_khation_num{
+        width: auto !important;
+    }
+	.landinfo-form-content .landinfo-input-block .landinfo-acor .acor-text{
+		height: 28px;
+		width: 50px !important;
+	}
+	.landinfo-input-block .landinfo-acor .acor-amount{
+		padding-left: 55px !important;
+	}
+	.landinfo-form-content .text-sm{
+		font-size: 0.60rem !important;
+	}
+
+	.landinfo-form-content .form-group label{
+		display: flex;
+		height: 30px;
+		justify-content: flex-start;
+		align-items: flex-end;
+	}
+	.src-status-box-body .user-info-item{
+		padding-left: 170px;
+	}
+	.src-status-box-body .user-info-item .user-info-title{
+		width: 160px;
+	}
+	.src-info-btn{
+		width: 145px;
+	}
+}
+@media (max-width: 991px){
+	.header-content{
+		height: auto;
+	}
+	.main-header .header-content .navbar-nav{
+		background-color: #ffffff;
+		border-radius: 0 0 4px 4px;
+	}
+
+	.header-content .header-search .form-control,
+	.header-content .navbar-expand-lg .navbar-nav .nav-link{
+		font-size: 1.25rem;
+	}
+
+	.header-search{
+		margin: 15px 0 5px;
+		width: 100%;
+		max-width: 370px;
+	}
+
+	.footer-top .footer-menu{
+		padding: 0;
+	}
+	.footer-top .footer-menu .footer-social{
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 100%;
+		display: inline-block;
+	}
+	.footer-bottom .footer-sponsor-logo ul li{
+		padding: 5px 10px;
+		margin: 0;
+	}
+	.footer-bottom .footer-sponsor-logo ul li a{
+		max-width: 120px;
+		width: 100%;
+	}
+	.footer-bottom .footer-sponsor-logo ul li span{
+		display: none;
+	}
+	.footer-top .footer-menu ul li{
+		margin: 5px 7px;
+	}
+
+	.home-slider{
+		margin-bottom: 60px;
+	}
+	.home-slider .lmt-home-slider-item{
+		height: 230px;
+	}
+	.home-slider .home-slider-nav{
+		bottom: -60px;
+		height: 60px;
+	}
+
+	.documentary-section .feature-white-box,
+	.home-feature .feature-white-box{
+		width: 100%;
+		max-width: 370px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.doc-item .doc-desc{
+		width: 120px;
+	}
+	.lmt-page-menu .navbar{
+		padding: 0;
+	}
+
+	.home-feature{
+		padding: 30px 0;
+	}
+	.home-feature .col-lg-4.mb-5{
+		margin-bottom: 1.5rem !important;
+	}
+
+	.lmt-page-menu .navbar ul li,
+	.lmt-page-menu .navbar ul{
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.lmt-page-menu .navbar ul li a{
+		width: 100%;
+	}
+	.lmt-page-menu .navbar ul li.active a{
+		border: 2px solid #42A045;
+	}
+
+	.lmt-page-menu .navbar ul li a:before{
+		display: none !important
+	}
+	.lmt-page-menu .navbar ul li.active a:after{
+		border-top-color: transparent;
+		border-left-color: #42A045;
+		left: 0;
+		bottom: 50%;
+		margin-bottom: -8px;
+	}
+
+	.lmt-contact-row .lmt-contact-form,
+	.lmt-contact-row .lmt-contact-info{
+		max-width: 100%;
+		-ms-flex: 0 0 100%;
+			flex: 0 0 100%;
+	}
+
+	.section-title h2{
+		font-size: 2rem;
+	}
+
+	.lmt-page-menu .navbar ul li a{
+		padding: 10px 35px 8px 60px;
+	}
+	.lmt-page-menu .navbar ul li a .lm-icon{
+		left: 20px;
+		top: 0;
+	}
+
+	.landinfo-table table.landinfo-table-footer{
+		min-width: 300px;
+		margin-top: 20px;
+	}
+	.landinfo-footer-title{
+		padding-left: 0;
+		max-width: 220px;
+	}
+	.landinfo-footer-title .footer-title-text{
+		position: relative;
+		left: auto;
+		top: auto;
+	}
+	.src-container-box .src-status-box-body .bdr-right{
+		border-right: none !important;
+	}
+	.area-namjari-docs-list .area-njd-list-item .area-btn-details{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media (max-width: 767px){
+	.terms-step-table .table th,
+	.terms-step-table .table td,
+	.lmt-table .table tbody tr td,
+	.lmt-table .table tbody tr th{
+		font-size: 1rem;
+		width: auto;
+	}
+
+	.section-footer .btn,
+	.lmt-table .table .btn{
+		font-size: 1rem;
+	}
+	.section-footer .btn{
+		float: none !important;
+		margin: 0 5px 10px !important;
+	}
+	.section-footer .helpful-btn-grp .btn{
+		margin-bottom: 0 !important;
+	}
+	.have-form-number .form-sec-number{
+		top: -4px;
+	}
+
+	.page-terms .page-content{
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+
+	.home-slider .lmt-home-slider-item {
+	  height: 170px;
+	}
+
+	.imgIconBlock .imgIcon{
+		width: 30px;
+	}
+	.feature-card{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.section-title h2{
+		font-size: 1.75rem;
+	}
+
+	.namjari-section-block .bs_radio [type="radio"]:checked + label::before,
+	.namjari-section-block .bs_radio [type="radio"]:not(:checked) + label::before{
+		top: 0;
+	}
+	.namjari-section-block .bs_radio [type="radio"]:checked + label::after,
+	.namjari-section-block .bs_radio [type="radio"]:not(:checked) + label::after{
+		top: 3px;
+	}
+
+	.src-info-btn{
+		width: calc(50% - 10px);
+	}
+	.src-step-table{
+		padding: 0 2rem 3rem;
+	}
+
+	.area-namjari-container{
+		width: 100%;
+		overflow-x: auto;
+	}
+
+	.area-namjari-container .area-namjari-table,
+	.area-namjari-container .area-namjari-docs-list{
+		width: 500px;
+	}
+	.area-namjari-docs .njd-head-text,
+	.area-namjari-docs-list .njd-head-text{
+		font-size: 1rem;
+	}
+	.area-namjari-docs-list .area-list-text{
+		font-size: 0.90rem;
+	}
+
+	.src-step-table{
+		width: 90%;
+		overflow-x: auto;
+		display: block;
+		margin: 0 auto;
+		padding: 0 0 40px;
+	}
+	.src-step-table .src-step-table-container{
+		width: 450px;
+	}
+
+}
+
+@media (max-width: 575px){
+	.home-slider .lmt-home-slider-item {
+	  height: 140px;
+	}
+
+	.tabmenu-box .nav a{
+		padding: 10px 20px 10px 46px;
+	}
+	.tabmenu-box .nav a .tabmenu-text{
+		font-size: 1rem;
+	}
+	.tabmenu-box .nav a .icon-tabmenu{
+		left: 15px;
+		top: 8px;
+	}
+	.tabmenu-box .nav a .icon-tutorial,
+	.tabmenu-box .nav a.active .icon-tutorial,
+	.tabmenu-box .nav a .icon-nirdeshika,
+	.tabmenu-box .nav a.active .icon-nirdeshika{
+		background-size: 18px 24px;
+		background-repeat: no-repeat;
+	}
+
+	.src-status-box-body .user-info-item{
+		font-size: 0.90rem;
+		padding-left: 145px;
+	}
+	.src-status-box-body .user-info-item .user-info-title{
+		width: 135px;
+	}
+
+    .area-namjari-docs-list .area-njd-list-item .area-btn-details{
+        padding-left: 7px;
+        padding-right: 7px;
+        font-size: 13px;
+    }
+
+    .area-namjari-docs .area-btn-details{
+        font-family: 'SolaimanLipi' !important;
+        margin-left: 1rem;
+        padding-left: 10px;
+        padding-right: 12px;
+        font-size: 13px;
+        color: #ffffff !important;
+    }
+
+}
+
+@media (max-width: 480px){
+	.lmt-table .table .btn{
+		font-size: 1rem;
+		padding: 5px;
+	}
+
+	.home-slider .lmt-home-slider-item {
+	  height: 150px;
+	}
+	.home-slider .home-slider-nav .carousel-indicators li{
+		height: 16px;
+		width: 16px;
+	}
+	.home-slider .home-slider-nav .carousel-indicators li.active{
+		height: 20px;
+		width: 20px;
+	}
+
+	.home-slider .lmt-home-slider-item{
+		height: 120px;
+	}
+
+	.content-footer .btn{
+		margin-bottom: 10px;
+	}
+
+	select.lmt-select, .form-group select{
+		background-position: 95% center;
+	}
+
+	.helpful-sec{
+		text-align: center;
+	}
+	.page-content .section-footer.px-5{
+		padding-left: 1.5rem !important;
+		padding-right: 1.5rem !important;
+	}
+
+	.src-step-table .src-step-table-container{
+		width: 540px;
+	}
+
+	.src-step-table .src-step-item .step-desc,
+	.src-step-table .src-step-item .step-status,
+	.src-step-table .src-step-item .step-title{
+		font-size: 0.90rem;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.src-step-table .src-step-item .step-desc{
+		-ms-flex: 0 0 30%;
+		flex: 0 0 30%;
+		max-width: 30%;
+	}
+	.src-step-table .src-step-item .step-status{
+		-ms-flex: 0 0 20%;
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+	.src-step-table .src-step-table-container{
+		padding-left: 40px;
+	}
+	.src-step-table.terms-step-table .steps-num{
+		left: -40px;
+	}
+	.src-step-table .src-step-item:before{
+		left: -22px;
+	}
+	.document-list-table .table th,
+	.document-list-table .table td{
+		font-size: 0.85rem;
+	}
+	.document-list-table .table td{
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+}
+@media (max-width: 390px){
+	.home-slider .lmt-home-slider-item{
+		height: 100px;
+	}
+
+}
+@media (min-width: 768px){
+    .main-content{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        min-height: calc(100vh - 296px);
+    }
+    .main-content > div{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .home-slider{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
