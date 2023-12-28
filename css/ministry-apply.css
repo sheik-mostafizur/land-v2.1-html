@@ -113,3 +113,10 @@ button.one-info {
   border-color: #0db14b;
 }
 
+
+.ministry-bottom-menu button.light{
+  background-color: #EBECEF;
+}
+.ministry-bottom-menu button.blue{
+  background-color: #0065FF;
+}
