@@ -94,11 +94,33 @@
                             </div>
                         </div>
                         <div class="body">
-                            <button class="one-info btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                            <!-- modal button -->
+                            <button class="one-info btn" data-toggle="modal" data-target="#mfcOneMore">
                                 <img src="./images/information-icon.svg" alt="information-icon">
                                 <span class="pl-1 text-primary">জানতে ক্লিক করুন</span>
                                 </spa>
                             </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="mfcOneMore" tabindex="-1" aria-labelledby="mfcOneMoreLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="mfcOneMoreLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer justify-content-center">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- end component one -->
