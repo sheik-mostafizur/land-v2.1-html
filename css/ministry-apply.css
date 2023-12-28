@@ -9,34 +9,20 @@
   font-weight: normal;
   font-style: normal;
 }
-.font-kalpurush *,
-.font-kalpurush {
-  font-family: "Kalpurush" !important;
-}
 
-.icon-songukto-more {
-  height: 20px;
-  width: 19px;
-  display: inline-block;
-  background: url(../images/icon-songukto-more.svg) no-repeat center center;
-  background-size: 100%;
-  transform: translateY(5px);
+.ministry-main {
+  font-family: "Kalpurush";
 }
-.icon-cross {
-  height: 20px;
-  width: 19px;
-  display: inline-block;
-  background: url(../images/cross_icon-red-white.svg) no-repeat center center;
-  background-size: 100%;
-  transform: translateY(5px);
+p {
+  font-family: "Kalpurush" !important;
 }
 
 .ministry-form .mf-component {
   background-color: white;
-  border-radius: 7px;
+  border-radius: 6px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
   padding: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 
 .ministry-form .mf-component .header {
@@ -46,6 +32,7 @@
   column-gap: 10px;
   row-gap: 5px;
 }
+
 .ministry-form .mf-component .header .number {
   height: 30px;
   width: 30px;
@@ -82,13 +69,14 @@ button.one-info {
 }
 
 .ministry-form .mf-component.three-four .kotojon-khotian {
-  max-width: 350px;
+  max-width: 325px;
 }
 
 .ministry-form .mf-component.three-four .kotojon-khotian input {
   font-size: 12px;
   padding: 20px 14px;
 }
+
 .ministry-form .mf-component.three-four .kotojon-khotian button {
   background-color: #0db14b;
   color: white;
@@ -106,15 +94,6 @@ button.one-info {
   padding: 0;
 }
 
-.ministry-form .mf-component.five .remove-dolil {
-  position: absolute;
-  right: -5px;
-  top: -10px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
-
 .ministry-form .mf-component.six table thead tr th,
 .ministry-form .mf-component.seven table thead tr th {
   background-color: #f0f0f0;
@@ -129,6 +108,9 @@ button.one-info {
   max-width: 90px;
   margin: auto;
   border-color: #0db14b;
+}
+.ministry-form .mf-component.seven table tbody tr td a {
+  margin: -5px 0;
 }
 
 .ministry-bottom-menu button {
