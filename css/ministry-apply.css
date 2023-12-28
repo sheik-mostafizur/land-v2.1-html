@@ -97,7 +97,8 @@ button.one-info {
   padding: 0;
 }
 
-.ministry-form .mf-component.six table thead tr th {
+.ministry-form .mf-component.six table thead tr th,
+.ministry-form .mf-component.seven table thead tr th {
   background-color: #f0f0f0;
   border: none;
   text-align: center;
@@ -111,3 +112,4 @@ button.one-info {
   margin: auto;
   border-color: #0db14b;
 }
+
