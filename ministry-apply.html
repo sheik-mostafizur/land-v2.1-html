@@ -46,7 +46,7 @@
     </header>
 
     <main class="main-content font-kalpurush ministry-main">
-        <div class="page-ghoshona pt-4">
+        <div class="page-ghoshona pt-4 mb-2">
             <div class="section-header text-center p-3">
                 <h4>মিউটেশন আবেদন</h4>
             </div>
@@ -94,50 +94,58 @@
                             </div>
                         </div>
                         <div class="body">
-                            <!-- modal button -->
-                            <button class="one-info btn" data-toggle="modal" data-target="#mfcOneMore">
-                                <img src="./images/information-icon.svg" alt="information-icon">
-                                <span class="pl-1 text-primary">জানতে ক্লিক করুন</span>
-                                </spa>
-                            </button>
-                            <!-- Modal -->
-                            <div class="modal fade" id="mfcOneMore" tabindex="-1" aria-labelledby="mfcOneMoreLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" style="max-width: 667px;">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title flex-grow-1 text-center" id="mfcOneMoreLabel">মিউটেশন
-                                                আবেদনের ধরণ
-                                            </h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <ul>
-                                                <li>আপনি সাধারণভাবে কোনো জমির মালিকানা অর্জন করলে নামজারি আবেদন করবেন।
-                                                </li>
-                                                <li>পূর্বে নামজারি আবেদনে খতিয়ান ভুল থাকলে, করণিক সংশোধন আবেদন করবেন।
-                                                </li>
-                                                <li>আপনার খতিয়ানে একাধিক মালিকানা হতে আলাদা হতে চাইলে জমা খারিজ আবেদন
-                                                    করবেন।</li>
-                                                <li>আপনার খতিয়ানে নতুন দাগ সংযুক্ত করতে চাইলে জমা একত্রীকরণ আবেদন করবেন।
-                                                </li>
-                                                <li>বর্তমান খতিয়ানে উল্লেখিত জমির শ্রেণী পরিবর্তন হয়ে গেলে শ্রেণীর
-                                                    পরিবর্তন আবেদন করবেন।</li>
-                                            </ul>
+                            <div class="ministry-modal">
+                                <!-- modal button -->
+                                <button class="one-info btn" data-toggle="modal" data-target="#mfcOneMore">
+                                    <img src="./images/information-icon.svg" alt="information-icon">
+                                    <span class="pl-1 text-primary">জানতে ক্লিক করুন</span>
+                                    </spa>
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="mfcOneMore" tabindex="-1" aria-labelledby="mfcOneMoreLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" style="max-width: 667px;">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title flex-grow-1 text-center" id="mfcOneMoreLabel">
+                                                    মিউটেশন
+                                                    আবেদনের ধরণ
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <ul>
+                                                    <li>আপনি সাধারণভাবে কোনো জমির মালিকানা অর্জন করলে নামজারি আবেদন
+                                                        করবেন।
+                                                    </li>
+                                                    <li>পূর্বে নামজারি আবেদনে খতিয়ান ভুল থাকলে, করণিক সংশোধন আবেদন
+                                                        করবেন।
+                                                    </li>
+                                                    <li>আপনার খতিয়ানে একাধিক মালিকানা হতে আলাদা হতে চাইলে জমা খারিজ
+                                                        আবেদন
+                                                        করবেন।</li>
+                                                    <li>আপনার খতিয়ানে নতুন দাগ সংযুক্ত করতে চাইলে জমা একত্রীকরণ আবেদন
+                                                        করবেন।
+                                                    </li>
+                                                    <li>বর্তমান খতিয়ানে উল্লেখিত জমির শ্রেণী পরিবর্তন হয়ে গেলে শ্রেণীর
+                                                        পরিবর্তন আবেদন করবেন।</li>
+                                                </ul>
 
-                                        </div>
-                                        <div class="modal-footer justify-content-center">
-                                            <button type="button" class="btn" data-dismiss="modal"
-                                                style="background-color: #EBECEF;">
-                                                <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6 0C4.91221 0 3.84884 0.322569 2.94437 0.926917C2.0399 1.53127 1.33495 2.39025 0.918665 3.39524C0.502383 4.40024 0.393465 5.5061 0.605683 6.573C0.817902 7.63989 1.34173 8.6199 2.11092 9.38909C2.8801 10.1583 3.86011 10.6821 4.92701 10.8943C5.9939 11.1065 7.09977 10.9976 8.10476 10.5813C9.10976 10.1651 9.96874 9.46011 10.5731 8.55564C11.1774 7.65117 11.5 6.5878 11.5 5.5C11.5 4.04131 10.9205 2.64236 9.88909 1.61091C8.85764 0.579463 7.45869 0 6 0V0ZM8.15738 7.00929L7.5093 7.65738L6 6.14808L4.49071 7.65738L3.84263 7.00929L5.35192 5.5L3.84263 3.99071L4.49071 3.34263L6 4.85192L7.5093 3.34263L8.15738 3.99071L6.64809 5.5L8.15738 7.00929Z"
-                                                        fill="#091E42" />
-                                                </svg>
-                                                পূর্বাবস্থায় ফিরুন</button>
+                                            </div>
+                                            <div class="modal-footer justify-content-center">
+                                                <button type="button" class="btn" data-dismiss="modal"
+                                                    style="background-color: #EBECEF;">
+                                                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M6 0C4.91221 0 3.84884 0.322569 2.94437 0.926917C2.0399 1.53127 1.33495 2.39025 0.918665 3.39524C0.502383 4.40024 0.393465 5.5061 0.605683 6.573C0.817902 7.63989 1.34173 8.6199 2.11092 9.38909C2.8801 10.1583 3.86011 10.6821 4.92701 10.8943C5.9939 11.1065 7.09977 10.9976 8.10476 10.5813C9.10976 10.1651 9.96874 9.46011 10.5731 8.55564C11.1774 7.65117 11.5 6.5878 11.5 5.5C11.5 4.04131 10.9205 2.64236 9.88909 1.61091C8.85764 0.579463 7.45869 0 6 0V0ZM8.15738 7.00929L7.5093 7.65738L6 6.14808L4.49071 7.65738L3.84263 7.00929L5.35192 5.5L3.84263 3.99071L4.49071 3.34263L6 4.85192L7.5093 3.34263L8.15738 3.99071L6.64809 5.5L8.15738 7.00929Z"
+                                                            fill="#091E42" />
+                                                    </svg>
+                                                    পূর্বাবস্থায় ফিরুন</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -183,6 +191,16 @@
                                 <div class="bs_checkbox"><input type="checkbox" id="c-two-7"
                                         class="form-check-input ownership_reference_check" value="c-two-7">
                                     <label for="c-two-7" class="form-check-label">আদালত রায়ের</label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bs_checkbox"><input type="checkbox" id="c-two-8"
+                                        class="form-check-input ownership_reference_check" value="c-two-8">
+                                    <label for="c-two-8" class="form-check-label">ব্যক্তিগত ক্রয়</label>
+                                </div>
+                                <div class="bs_checkbox"><input type="checkbox" id="c-two-9"
+                                        class="form-check-input ownership_reference_check" value="c-two-9">
+                                    <label for="c-two-9" class="form-check-label">প্রাতিষ্ঠানিক ক্রয়</label>
                                 </div>
                             </div>
                         </div>
@@ -288,6 +306,61 @@
                                         <button class="btn btn-lg" type="submit">নিশ্চিত করুন</button>
                                     </span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mf-component">
+                        <div class="header">
+                            <p class="number">৩</p>
+                            <p class="title">আপনি কোন ধরণের মিউটেশন আবেদন করবেন?
+                            </p>
+                        </div>
+                        <div class="body">
+                            <div>
+                                <div class="bs_radio border rounded py-1 px-2"><input type="radio" id="is_record_flow1"
+                                        value="1" class="form-check-input  required_field" name="th-yes-no"> <label
+                                        for="is_record_flow1" class="form-check-label">হ্যাঁ</label>
+                                </div>
+                                <div class="bs_radio border rounded py-1 px-2"><input type="radio" id="is_record_flow2"
+                                        value="1" class="form-check-input required_field" name="th-yes-no"> <label
+                                        for="is_record_flow2" class="form-check-label">না</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mf-component">
+                        <div class="header">
+                            <p class="number active">৪</p>
+                            <p class="title">আবেদিত জমির তফসিল নির্বাচন করুন</p>
+                        </div>
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 mb-4"><label>বিভাগ </label> <select
+                                        class="form-control form-control-lg">
+                                        <option value="">নির্বাচন করুন</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-3 mb-4"><label>জেলা </label> <select
+                                        class="form-control form-control-lg">
+                                        <option value="">নির্বাচন করুন</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-3 mb-4"><label>উপজেলা </label> <select
+                                        class="form-control form-control-lg">
+                                        <option value="">নির্বাচন করুন</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-3 mb-4"><label>মৌজা </label> <select
+                                        class="form-control form-control-lg">
+                                        <option value="">নির্বাচন করুন</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="d-flex border rounded-lg align-items-center justify-content-center"
+                                style="height: 136px;">
+                                <button type="button" class="btn active btn-outline-success m-icon-left"><i
+                                        class="fa fa-plus-circle"></i>
+                                    জমি সংযুক্ত করুন</button>
                             </div>
                         </div>
                     </div>
@@ -444,6 +517,93 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="mf-component five">
+                        <div class="header">
+                            <p class="number active">৫</p>
+                            <p class="title">ওয়ারিশ হিসেবে আবেদনকারীর তথ্য প্রদান করুন</p>
+                        </div>
+                        <div class="body">
+                            <div>
+                                <p class="mb-2">ক) উত্তরাধিকার জমির মালিকানা আছে কিনা?</p>
+                                <div class="bs_radio border rounded py-1 px-2"><input type="radio" id="five-orish1"
+                                        value="1" class="form-check-input  required_field" name="five-orish"> <label
+                                        for="five-orish1" class="form-check-label">হ্যাঁ</label>
+                                </div>
+                                <div class="bs_radio border rounded py-1 px-2"><input type="radio" id="five-orish2"
+                                        value="1" class="form-check-input required_field" name="five-orish"> <label
+                                        for="five-orish2" class="form-check-label">না</label>
+                                </div>
+                            </div>
+
+                            <div class="my-3">
+
+                                <p>খ) ওয়ারিশ সনদ অনুযায়ী গ্রহীতার তথ্য সংযুক্ত করুন:</p>
+                                <div class="border pt-3 px-3 bg-light" style="border-radius: 10px;">
+                                    <div>
+                                        <div class="flex-grow-1 text-right mb-3">
+                                            <button type="button" class="btn active btn-outline-success m-icon-left"><i
+                                                    class="fa fa-plus-circle"></i>
+                                                ওয়ারিশের তথ্য সংযুক্ত করুন</button>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">ক্রমিক</th>
+                                                        <th scope="col">নাম</th>
+                                                        <th scope="col">মৃত ব্যক্তির সাথে সম্পর্ক</th>
+                                                        <th scope="col">জাতীয় পরিচয়পত্র/জন্ম-নিবন্ধন নম্বর </th>
+                                                        <th scope="col">মোবাইল নম্বর</th>
+                                                        <th scope="col">পদক্ষেপ</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center"> ১ </td>
+                                                        <td>জুবায়ের নাজিম</td>
+                                                        <td>সম্পর্ক</td>
+                                                        <td>জাতীয় পরিচয়পত্র/জন্ম-নিবন্ধন নম্বর</td>
+                                                        <td>মোবাইল নম্বর</td>
+                                                        <td>
+                                                            <select class="form-control form-control-sm">
+                                                                <option value="">পদক্ষেপ</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"> ২ </td>
+                                                        <td>জুবায়ের নাজিম</td>
+                                                        <td>সম্পর্ক</td>
+                                                        <td>জাতীয় পরিচয়পত্র/জন্ম-নিবন্ধন নম্বর</td>
+                                                        <td>মোবাইল নম্বর</td>
+                                                        <td>
+                                                            <select class="form-control form-control-sm">
+                                                                <option value="">পদক্ষেপ</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="mb-2">গ) সকলে একই খতিয়ানের হতে চান কিনা?</p>
+                                <div class="bs_radio border rounded py-1 px-2"><input type="radio" id="five-kothan1"
+                                        value="1" class="form-check-input  required_field" name="five-kothan"> <label
+                                        for="five-kothan1" class="form-check-label">হ্যাঁ</label>
+                                </div>
+                                <div class="bs_radio border rounded py-1 px-2"><input type="radio" id="five-khotian2"
+                                        value="1" class="form-check-input required_field" name="five-kothan"> <label
+                                        for="five-khotian2" class="form-check-label">না</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- end component five -->
 
                     <!-- start component six -->
@@ -453,7 +613,7 @@
                             <p class="title">দাতার তথ্য প্রদান করুন
                             </p>
                             <div class="flex-grow-1 text-right">
-                                <button type="button" class="btn active btn-outline-success m-icon-left"><i
+                                <button type="button" class="btn active btn-outline-success m-icon-left mb-3"><i
                                         class="fa fa-plus-circle"></i>
                                     আরো দাতা সংযুক্ত করুন</button>
                             </div>
@@ -564,7 +724,7 @@
                             </p>
                         </div>
                         <div class="body">
-                            <div class="alert alert-warning" role="alert">
+                            <div class="alert alert-warning text-dark" role="alert">
                                 আবেদনের সাথে প্রয়োজনীয় কাগজপত্র সংযুক্তির ক্ষেত্রে স্ক্যান ফাইলটি অবশ্যই pdf
                                 ফরমেটে হতে হবে । অন্য কোন ফরমেটে ফাইলটি আপলোড করা যাবেনা। pdf ফাইল সাইজ অবশ্য
                                 সর্বোচ্চ ( পেজের সংখ্যা ১.২৫MB) এর মধ্যে হতে হবে এবং অবশ্যই ২৫ mb এর মধ্যে হতে
@@ -616,20 +776,20 @@
                     <!-- end component seven -->
                 </div>
             </div>
-        </div>
-        <div class="container ministry-bottom-menu">
-            <div class="row my-4">
-                <div class="col text-center">
-                    <button type="button" class="btn light">
-                        <img src="./images/icon-home.svg" alt="">
-                        বাতিল করুন</button>
-                    <button type="button" class="btn blue btn-primary m-icon-left">
-                        <img src="./images/icon-save.svg" alt="">
-                        সংরক্ষণ </button>
-                    <button type="button" class="btn active btn-outline-success m-icon-left">
-                        সংরক্ষণ এবং পরবর্তী
-                        <img src="./images/icon-right-arrow.svg" alt="">
-                    </button>
+            <div class="container ministry-bottom-menu">
+                <div class="row my-3">
+                    <div class="col text-center">
+                        <button type="button" class="btn light">
+                            <img src="./images/icon-home.svg" alt="">
+                            বাতিল করুন</button>
+                        <button type="button" class="btn blue btn-primary m-icon-left">
+                            <img src="./images/icon-save.svg" alt="">
+                            সংরক্ষণ </button>
+                        <button type="button" class="btn active btn-outline-success m-icon-left">
+                            সংরক্ষণ এবং পরবর্তী
+                            <img src="./images/icon-right-arrow.svg" alt="">
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

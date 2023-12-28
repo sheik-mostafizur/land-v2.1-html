@@ -17,6 +17,13 @@ p {
   font-family: "Kalpurush" !important;
 }
 
+/* ministry-modal */
+.ministry-modal .modal-header,
+.ministry-modal .modal-footer {
+  background-color: #f4fff8;
+  color: #0b9640;
+}
+
 .ministry-form .mf-component {
   background-color: white;
   border-radius: 6px;
@@ -56,12 +63,6 @@ button.one-info {
   list-style-type: disc !important;
 }
 
-.ministry-form .mf-component.one .modal-header,
-.ministry-form .mf-component.one .modal-footer {
-  background-color: #f4fff8;
-  color: #0b9640;
-}
-
 .ministry-form .mf-component.three-four .yes .grohita {
   background-color: #f8f9f8;
   color: #9c7c00;
@@ -94,6 +95,7 @@ button.one-info {
   padding: 0;
 }
 
+.ministry-form .mf-component.five table thead tr th,
 .ministry-form .mf-component.six table thead tr th,
 .ministry-form .mf-component.seven table thead tr th {
   background-color: #f0f0f0;
@@ -101,14 +103,22 @@ button.one-info {
   text-align: center;
   font-weight: normal;
 }
+
+.ministry-form .mf-component.five table tbody tr td,
 .ministry-form .mf-component.six table tbody tr td {
   background-color: #fcfcfc;
 }
+.ministry-form .mf-component.five table tbody tr td select,
 .ministry-form .mf-component.six table tbody tr td select {
   max-width: 90px;
   margin: auto;
   border-color: #0db14b;
 }
+.ministry-form .mf-component.five table tbody tr td select:hover,
+.ministry-form .mf-component.six table tbody tr td select:hover {
+  background-color: #42a045;
+}
+
 .ministry-form .mf-component.seven table tbody tr td a {
   margin: -5px 0;
 }
