@@ -46,3 +46,16 @@ button.one-info {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+
+.ministry-form .mf-component.five {
+}
+
+.ministry-form .mf-component.five .remove-dolil {
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  background-color: #ec1c24;
+  color: white;
+  border-radius: 10px !important;
+  padding: 3px 8px;
+}
