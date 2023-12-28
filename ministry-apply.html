@@ -46,7 +46,7 @@
             </div>
         </header>
 
-        <main class="main-content">
+        <main class="main-content font-kalpurush ">
             <div class="page-ghoshona pt-4">
                 <div class="section-header text-center p-3">
                     <h4>মিউটেশন আবেদন</h4>
@@ -198,7 +198,7 @@
                                 </p>
                                 <div class="flex-grow-1 text-right">
                                     <button type="button" class="btn active btn-outline-success m-icon-left"><i
-                                            aria-hidden="true" class="fa fa-plus-circle"></i>
+                                            class="icon-songukto-more "></i>
                                         আরো দলিল যুক্ত করুন</button>
                                 </div>
                             </div>
@@ -235,14 +235,26 @@
                                     </div>
 
                                     <div class="col-lg-4 col-md-4 mb-4 dolil-jukto"><label>দলিল সংযুক্ত করুন </label>
-                                        <input type="file" placeholder="দলিল সংযুক্ত করুন"
-                                            class="form-control form-control-lg">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="inputGroupFileAddon01"> <img
+                                                        src="./images/menu-icon-songjukti-white.svg" alt="">
+                                                    <span class="pl-2">Select
+                                                        file</span></span>
+                                            </div>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                                    aria-describedby="inputGroupFileAddon01">
+                                                <label class="custom-file-label" for="inputGroupFile01">দলিল সংযুক্ত
+                                                    করুন</label>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </div>
                                 <div class="row border pt-3 mt-3 position-relative">
-                                    <button type="button" class="btn remove-dolil">
-                                        <i class="fa fa-close"></i>
+                                    <button type="button" class=" remove-dolil">
+                                        <i class="icon-cross"></i>
                                     </button>
 
                                     <div class="col-lg-4 col-md-4 mb-4"><label>দলিল ১ </label> <select
@@ -274,13 +286,25 @@
                                             <option value="">হোল্ডিং নং</option>
                                         </select>
                                     </div>
-
                                     <div class="col-lg-4 col-md-4 mb-4 dolil-jukto"><label>দলিল সংযুক্ত করুন </label>
-                                        <input type="file" placeholder="দলিল সংযুক্ত করুন"
-                                            class="form-control form-control-lg">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="inputGroupFileAddon01"> <img
+                                                        src="./images/menu-icon-songjukti-white.svg" alt="">
+                                                    <span class="pl-2">Select
+                                                        file</span></span>
+                                            </div>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                                    aria-describedby="inputGroupFileAddon01">
+                                                <label class="custom-file-label" for="inputGroupFile01">দলিল সংযুক্ত
+                                                    করুন</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- start ৫.২  -->
 
                             <div class="header">
                                 <p class="number">৫.২</p>
@@ -313,84 +337,152 @@
                                 <div class="row border rounded-lg  align-items-center justify-content-center"
                                     style="height: 120px;">
                                     <button type="button" class="btn active btn-outline-success m-icon-left"><i
-                                            aria-hidden="true" class="fa fa-plus-circle"></i>
+                                            class="icon-songukto-more "></i>
                                         জমি সংযুক্ত করুন</button>
                                 </div>
                             </div>
                         </div>
                         <!-- end component five -->
-                    </div>
-                </div>
-            </div>
 
-        </main>
-
-        <footer class="land-smart-mutation-footer">
-            <div class="footer-main">
-                <div class="container">
-                    <div class="footer-top-sec">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6">
-                                <div class="footer-item">
-                                    <div class="footer-logo-group">
-                                        <a class="footer-logo-item" href="#">
-                                            <img src="./images/2023/home/ba-footer-logo-land-white.svg" alt="Logo">
-                                        </a>
-                                        <a class="footer-logo-item" href="#">
-                                            <img src="./images/2023/home/ba-footer-logo-white.svg" alt="Logo">
-                                        </a>
+                        <!-- start component six -->
+                        <div class="mf-component five">
+                            <div class="header">
+                                <p class="number active">৬</p>
+                                <p class="title">দাতার তথ্য প্রদান করুন
+                                </p>
+                                <div class="flex-grow-1 text-right">
+                                    <button type="button" class="btn active btn-outline-success m-icon-left"><i
+                                            class="icon-songukto-more "></i>
+                                        আরো দাতা সংযুক্ত করুন</button>
+                                </div>
+                            </div>
+                            <div class="body border rounded-lg pt-3 px-3 mt-3">
+                                <div>
+                                    <p>১. সর্বশেষ জরিপ/ নামজারী রেকর্ডীয় মালিকের তথ্য</p>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div>
+                                    <p>১.১ দাতা এবং সর্বশেষ জরিপ / নামজারী রেকর্ডীয়
+                                        মালিক একই?</p>
+                                    <div>
+                                        <div class="bs_radio border rounded py-1 px-2"><input type="radio"
+                                                id="data-jorip1" value="1" class="form-check-input  required_field"
+                                                name="th-yes-no"> <label for="data-jorip1"
+                                                class="form-check-label">হ্যাঁ</label>
+                                        </div>
+                                        <div class="bs_radio border rounded py-1 px-2"><input type="radio"
+                                                id="data-jorip2" value="1" class="form-check-input required_field"
+                                                name="th-yes-no"> <label for="data-jorip2"
+                                                class="form-check-label">না</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="footer-item">
-                                    <h3 class="footer-title">নামজারি সেবা</h3>
-                                    <ul class="footer-menu">
-                                        <li><a href="#">নামজারির ধাপ</a></li>
-                                        <li><a href="#">নামজারি সংক্রান্ত প্রজ্ঞাপন / বিধি</a></li>
-                                        <li><a href="#">ভূমিসেবা </a></li>
-                                        <li><a href="#">পরিসংখ্যান</a></li>
-                                        <li><a href="#">যোগাযোগ</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="footer-item">
-                                    <h3 class="footer-title">অন্যান্য</h3>
-                                    <ul class="footer-menu">
-                                        <li><a href="#">শর্তাবলী</a></li>
-                                        <li><a href="#">কর্মকর্তাবৃন্দের তালিকা</a></li>
-                                        <li><a href="#">জিজ্ঞাসা </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="footer-item">
-                                    <h3 class="footer-title">গুরুত্বপুর্ণ লিংকসমূহ</h3>
-                                    <ul class="footer-menu">
-                                        <li><a href="#">ভূমি মন্ত্রণালয়</a></li>
-                                        <li><a href="#">ভূমি পোর্টাল</a></li>
-                                        <li><a href="#">ভূমি উন্নয়ন কর</a></li>
-                                        <li><a href="#">ই-পর্চা</a></li>
-                                        <li><a href="#">বাংলাদেশ নির্বাচন কমিশন</a></li>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
+                        <!-- end component six -->
+
                     </div>
 
-                    <div class="footer-bottom-sec">
-                        <div class="footer-app-logo">
-                            <a class="app-icon" href="mobile-app.html">
-                                <img src="./images/2023/home/mutation-app-logo.svg" height="40" alt="Mutaion App">
-                            </a>
-                        </div>
-                        <p>ভূমি মন্ত্রনালয়ের অধীনে মিউটেশনের সকল তথ্য পেতে নামজারি অ্যাপস। নামজারি অ্যাপস ভূমি বিষয়ে সকল
-                            প্রকার তথ্য-উপাত্ত দেখা যাবে।</p>
-                    </div>
                 </div>
             </div>
-        </footer>
+    </div>
+
+    </main>
+
+    <footer class="land-smart-mutation-footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-top-sec">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-item">
+                                <div class="footer-logo-group">
+                                    <a class="footer-logo-item" href="#">
+                                        <img src="./images/2023/home/ba-footer-logo-land-white.svg" alt="Logo">
+                                    </a>
+                                    <a class="footer-logo-item" href="#">
+                                        <img src="./images/2023/home/ba-footer-logo-white.svg" alt="Logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-item">
+                                <h3 class="footer-title">নামজারি সেবা</h3>
+                                <ul class="footer-menu">
+                                    <li><a href="#">নামজারির ধাপ</a></li>
+                                    <li><a href="#">নামজারি সংক্রান্ত প্রজ্ঞাপন / বিধি</a></li>
+                                    <li><a href="#">ভূমিসেবা </a></li>
+                                    <li><a href="#">পরিসংখ্যান</a></li>
+                                    <li><a href="#">যোগাযোগ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-item">
+                                <h3 class="footer-title">অন্যান্য</h3>
+                                <ul class="footer-menu">
+                                    <li><a href="#">শর্তাবলী</a></li>
+                                    <li><a href="#">কর্মকর্তাবৃন্দের তালিকা</a></li>
+                                    <li><a href="#">জিজ্ঞাসা </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-item">
+                                <h3 class="footer-title">গুরুত্বপুর্ণ লিংকসমূহ</h3>
+                                <ul class="footer-menu">
+                                    <li><a href="#">ভূমি মন্ত্রণালয়</a></li>
+                                    <li><a href="#">ভূমি পোর্টাল</a></li>
+                                    <li><a href="#">ভূমি উন্নয়ন কর</a></li>
+                                    <li><a href="#">ই-পর্চা</a></li>
+                                    <li><a href="#">বাংলাদেশ নির্বাচন কমিশন</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom-sec">
+                    <div class="footer-app-logo">
+                        <a class="app-icon" href="mobile-app.html">
+                            <img src="./images/2023/home/mutation-app-logo.svg" height="40" alt="Mutaion App">
+                        </a>
+                    </div>
+                    <p>ভূমি মন্ত্রনালয়ের অধীনে মিউটেশনের সকল তথ্য পেতে নামজারি অ্যাপস। নামজারি অ্যাপস ভূমি বিষয়ে সকল
+                        প্রকার তথ্য-উপাত্ত দেখা যাবে।</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
 
     <div class="modal smt-modal fade" id="khosraInfoModal" tabindex="-1" aria-labelledby="khosraInfoModal"

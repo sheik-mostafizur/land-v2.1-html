@@ -1,3 +1,36 @@
+@font-face {
+  font-family: "Kalpurush";
+  src: url("../fonts/Kalpurush/kalpurush-kalpurush.eot");
+  src: url("../fonts/Kalpurush/kalpurush-kalpurush.woff") format("woff"),
+    url("../fonts/Kalpurush/Kalpurush-Regular.ttf") format("truetype"),
+    url("../fonts/Kalpurush/kalpurush-kalpurush.svg") format("svg"),
+    url("../fonts/Kalpurush/kalpurush-kalpurush.eot")
+      format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-kalpurush *,
+.font-kalpurush {
+  font-family: "Kalpurush" !important;
+}
+
+.icon-songukto-more {
+  height: 20px;
+  width: 19px;
+  display: inline-block;
+  background: url(../images/icon-songukto-more.svg) no-repeat center center;
+  background-size: 100%;
+  transform: translateY(5px);
+}
+.icon-cross {
+  height: 20px;
+  width: 19px;
+  display: inline-block;
+  background: url(../images/cross_icon-red-white.svg) no-repeat center center;
+  background-size: 100%;
+  transform: translateY(5px);
+}
+
 .ministry-form .mf-component {
   background-color: white;
   border-radius: 7px;
@@ -46,16 +79,20 @@ button.one-info {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-
-.ministry-form .mf-component.five {
+.ministry-form .mf-component.five .dolil-jukto span {
+  background-color: #0db14b;
+  color: white;
+}
+.ministry-form .mf-component.five .dolil-jukto label::after {
+  content: "";
+  padding: 0;
 }
 
 .ministry-form .mf-component.five .remove-dolil {
   position: absolute;
   right: -5px;
   top: -10px;
-  background-color: #ec1c24;
-  color: white;
-  border-radius: 10px !important;
-  padding: 3px 8px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
