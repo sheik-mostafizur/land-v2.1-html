@@ -43,7 +43,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  column-gap: 10px;
+  row-gap: 5px;
 }
 .ministry-form .mf-component .header .number {
   height: 30px;
@@ -113,10 +114,12 @@ button.one-info {
   border-color: #0db14b;
 }
 
-
-.ministry-bottom-menu button.light{
-  background-color: #EBECEF;
+.ministry-bottom-menu button {
+  margin: 0.5rem;
 }
-.ministry-bottom-menu button.blue{
-  background-color: #0065FF;
+.ministry-bottom-menu button.light {
+  background-color: #ebecef;
+}
+.ministry-bottom-menu button.blue {
+  background-color: #0065ff;
 }
