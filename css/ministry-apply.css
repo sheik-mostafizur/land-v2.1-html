@@ -95,28 +95,27 @@ button.one-info {
   padding: 0;
 }
 
-.ministry-form .mf-component.five table thead tr th,
-.ministry-form .mf-component.six table thead tr th,
-.ministry-form .mf-component.seven table thead tr th {
+.ministry-form table thead tr th {
   background-color: #f0f0f0;
   border: none;
   text-align: center;
   font-weight: normal;
 }
 
-.ministry-form .mf-component.five table tbody tr td,
-.ministry-form .mf-component.six table tbody tr td {
+.ministry-form table tbody tr td {
   background-color: #fcfcfc;
 }
-.ministry-form .mf-component.five table tbody tr td select,
-.ministry-form .mf-component.six table tbody tr td select {
+
+.ministry-form table tbody tr td select {
   max-width: 90px;
   margin: auto;
   border-color: #0db14b;
 }
-.ministry-form .mf-component.five table tbody tr td select:hover,
-.ministry-form .mf-component.six table tbody tr td select:hover {
+.ministry-form table tbody tr td select:hover {
   background-color: #42a045;
+}
+.ministry-form table tbody tr td select:focus {
+  background-color: #fcfcfc;
 }
 
 .ministry-form .mf-component.seven table tbody tr td a {
