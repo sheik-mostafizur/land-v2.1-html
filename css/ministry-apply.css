@@ -64,6 +64,17 @@ button.one-info {
   padding: 10px;
 }
 
+.ministry-form .mf-component.one ul li {
+  margin-left: 1rem;
+  list-style-type: disc !important;
+}
+
+.ministry-form .mf-component.one .modal-header,
+.ministry-form .mf-component.one .modal-footer {
+  background-color: #f4fff8;
+  color: #0b9640;
+}
+
 .ministry-form .mf-component.three-four .yes .grohita {
   background-color: #f8f9f8;
   color: #9c7c00;
