@@ -214,7 +214,7 @@
                             <p class="title">আপনি কোন ধরণের মিউটেশন আবেদন করবেন?
                             </p>
                         </div>
-                        <div class="body mb-4">
+                        <div class="body">
                             <div>
                                 <div class="bs_radio border rounded py-1 px-2"><input type="radio" id="is_record_flow1"
                                         value="1" class="form-check-input  required_field" name="th-yes-no"> <label
@@ -291,6 +291,131 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- start অধিগ্রহণ 3.1 ৩.১ -->
+                        <div class="header">
+                            <p class="number">৩.১</p>
+                            <p class="title">প্রতিষ্ঠানের ধরন?</p>
+                        </div>
+                        <div class="body">
+                            <div>
+                                <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio" id="ogradhikar1"
+                                        value="1" class="form-check-input  required_field" name="ogradhikar"> <label
+                                        for="ogradhikar1" class="form-check-label">RJSC
+                                        নিবন্ধিত প্রতিষ্ঠান</label>
+                                </div>
+                                <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio" id="ogradhikar2"
+                                        value="1" class="form-check-input required_field" name="ogradhikar"> <label
+                                        for="ogradhikar2" class="form-check-label">সরকারি
+                                        অফিস বা সংস্থা</label>
+                                </div>
+                                <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio" id="ogradhikar3"
+                                        value="1" class="form-check-input required_field" name="ogradhikar"> <label
+                                        for="ogradhikar3" class="form-check-label">অন্যান্য
+                                        প্রতিষ্ঠান বা
+                                        সংস্থা</label>
+                                </div>
+                            </div>
+                            <div class="bs_checkbox"><input type="checkbox" id="ogradhikar_checkbox"
+                                    class="form-check-input ownership_reference_check" value="ogradhikar_checkbox">
+                                <label for="ogradhikar_checkbox" class="form-check-label">এক কোম্পানি থেকে অন্য
+                                    কোম্পানিতে হস্তান্তর কিনা</label>
+                            </div>
+                            <div class="alert alert-warning" role="alert">
+                                বাংলাদেশ বিনিয়োগ উন্নয়ন কর্তৃপক্ষ (বিডা)'র ওয়ান স্টপ সার্ভিস সিস্টেম হতে প্রেরিত সকল
+                                আবেদন ৭ কার্যদিবসের মধ্যে নিস্পত্তি করার জন্য ভূমি মন্ত্রণালয় নির্দেশনা প্রদান
+                                করেছে।বিডা ওয়ান স্টপ সার্ভিস সিস্টেম হতে আবেদন করতে ক্লিক করুন (
+                                https://bidaquickserv.org/ )
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-5 col-md-4 mb-4"><label>নিবন্ধন নম্বর</label> <input type="text"
+                                        placeholder="নিবন্ধন নম্বর" class="form-control form-control-lg">
+
+                                </div>
+                                <div class="col-lg-5 col-md-4 mb-4">
+                                    <label>নিবন্ধনের তারিখ</label>
+                                    <input type="date" placeholder="নিবন্ধনের তারিখ"
+                                        class="form-control form-control-lg">
+                                </div>
+                                <div class="col-lg-2 col-md-4 d-flex align-items-center mt-2">
+                                    <button type="button"
+                                        class="btn active btn-outline-success m-icon-left whitespace-nowrap"><i
+                                            class="fa fa-save"></i>
+                                        যাচাই করুন</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3 mb-4"><label>IBSA Code</label> <input type="text"
+                                        placeholder="IBSA Code" class="form-control form-control-lg">
+
+                                </div>
+                                <div class="col-md-3 col-lg-2 d-flex align-items-center mt-2">
+                                    <button type="button"
+                                        class="btn active btn-outline-success m-icon-left whitespace-nowrap"><i
+                                            class="fa fa-save"></i>
+                                        যাচাই করুন</button>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <label>প্রতিষ্ঠানের নাম</label>
+                                    <input type="text" placeholder="প্রতিষ্ঠানের নাম"
+                                        class="form-control form-control-lg">
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <label>eTIN নম্বর:</label>
+                                    <input type="text" placeholder="eTIN নম্বর" class="form-control form-control-lg">
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4"><label>বিভাগ </label> <select
+                                        class="form-control form-control-lg">
+                                        <option value="">নির্বাচন করুন</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4"><label>জেলা </label> <select
+                                        class="form-control form-control-lg">
+                                        <option value="">নির্বাচন করুন</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4"><label>উপজেলা </label> <select
+                                        class="form-control form-control-lg">
+                                        <option value="">নির্বাচন করুন</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4"><label>নিবন্ধিত ঠিকানা </label> <select
+                                        class="form-control form-control-lg">
+                                        <option value="">নির্বাচন করুন</option>
+                                        <option value=""></option>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4 file-add"><label>স্বাক্ষর সংযুক্ত করুন</label>
+                                    <div class="input-group border p-1 rounded">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupFileAddon01"> <img
+                                                    src="./images/menu-icon-songjukti-white.svg" alt="">
+                                                <span class="pl-2 font-roboto">Select
+                                                    file</span></span>
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                                aria-describedby="inputGroupFileAddon01">
+                                            <label class="custom-file-label" for="inputGroupFile01">স্বাক্ষর সংযুক্ত
+                                                করুন</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end অধিগ্রহণ 3.1 ৩.১ -->
+
 
                         <div class="header">
                             <p class="number">৪</p>
