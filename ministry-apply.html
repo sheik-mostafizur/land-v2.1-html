@@ -76,7 +76,7 @@
                     <div class="mf-component one">
                         <div class="header">
                             <p class="number active">১</p>
-                            <p class="title">আপনি কোন ধরণের মিউটেশন আবেদন করবেন?
+                            <p class="title mr-3">আপনি কোন ধরণের মিউটেশন আবেদন করবেন?
                             </p>
                             <div>
                                 <div class="bs_checkbox border px-2 py-1 rounded"><input type="checkbox" id="c-one-1"
@@ -258,16 +258,16 @@
                                     <div>
                                         <p class="my-3">প্রতিনিধিত্ব করার ক্ষমতার্পন (Authorization letter) ডকুমেন্ট
                                             সংযুক্ত করুন।
-                                            <img src="./images/pdf.png" alt="">
+                                            <img class="pl-2" src="./images/icon-pdf.svg" alt="">
                                         </p>
                                         <button type="button" class="btn active btn-outline-success m-icon-left"><i
                                                 class="fa fa-plus-circle" aria-hidden="true"></i>
-                                            জমি সংযুক্ত করুন</button>
+                                            ডকুমেন্ট সংযুক্ত করুন</button>
                                     </div>
 
                                     <div>
-                                        <p class="my-3">যোগাযোগ/ ওটিপি/ SMS পাঠানোর জন্য মোবাইল নম্বর। <img
-                                                src="./images/information-icon.svg" alt=""></p>
+                                        <p class="my-3">যোগাযোগ/ ওটিপি/ SMS পাঠানোর জন্য মোবাইল নম্বর। <img class="mb-1"
+                                                src="./images/icon-info.svg" alt=""></p>
 
                                         <div class="alert alert-warning" role="alert">
                                             সকল ধরণের যোগাযোগ/ ওটিপি/ SMS পাঠানোর জন্য যে কোনো একজন গ্রহীতার নিজের
@@ -282,7 +282,7 @@
                                     </div>
 
                                     <div class="row pt-3 mt-3">
-                                        <div class="col mb-4">
+                                        <div class="col-md-6 col-lg-4 mb-4">
                                             <label>মোবাইল নম্বর </label>
                                             <input type="text" placeholder="017xxxxxxxxx"
                                                 class="form-control form-control-lg">
@@ -293,22 +293,104 @@
                         </div>
 
                         <div class="header">
-                            <p class="title">৪ আবেদনকারী/গ্রহীতার তথ্য
+                            <p class="number">৪</p>
+                            <p class="title">আবেদনকারী/গ্রহীতার তথ্য
                             </p>
                         </div>
                         <div class="body">
-                            <p class="mb-2">আবেদনকারী/গ্রহীতা খতিয়ানে কতজন সংযুক্ত হবে?</p>
+                            <p class="mb-2 ml-2">আবেদনকারী/গ্রহীতা খতিয়ানে কতজন সংযুক্ত হবে?</p>
                             <div class="kotojon-khotian">
                                 <div class="input-group">
                                     <input type="email" class="form-control form-control-lg"
                                         placeholder="কতজন সংযুক্ত হবে সংখ্যা লিখুন">
                                     <span class="input-group-btn">
-                                        <button class="btn btn-lg" type="submit">নিশ্চিত করুন</button>
+                                        <button class="btn btn-lg whitespace-nowrap" type="submit">নিশ্চিত করুন</button>
                                     </span>
                                 </div>
                             </div>
+
+                            <div class="border pt-3 px-3 bg-light" style="border-radius: 10px;">
+                                <div>
+                                    <div
+                                        class="flex-grow-1 d-flex align-items-center justify-content-between flex-wrap text-right mb-3">
+                                        <div class=" d-flex align-items-center justify-content-between">
+                                            <p class="mb-2">আবেদনকারী/গ্রহীতা কিভাবে জমির তফসিল বন্টন করবেন</p>
+                                            <div class="ml-3">
+                                                <div class="bs_radio border rounded py-1 px-2 mr-3"><input type="radio"
+                                                        id="tf_som_vin1" value="1"
+                                                        class="form-check-input  required_field" name="tf-som-vin">
+                                                    <label for="tf_som_vin1" class="form-check-label">সমভাবে </label>
+                                                </div>
+                                                <div class="bs_radio border rounded py-1 px-2"><input type="radio"
+                                                        id="tf_som_vin2" value="1"
+                                                        class="form-check-input required_field" name="tf-som-vin">
+                                                    <label for="tf_som_vin2" class="form-check-label">ভিন্নভাবে</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary"><i
+                                                class="fa fa-edit"></i></button>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">ক্রমিক</th>
+                                                    <th scope="col">নাম</th>
+                                                    <th scope="col">জাতীয় পরিচয়পত্র/জন্ম-নিবন্ধন নম্বর </th>
+                                                    <th scope="col">মোবাইল নম্বর</th>
+                                                    <th scope="col">জমির অংশ</th>
+                                                    <th scope="col" style="width: 36px;">পদক্ষেপ</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center">১</td>
+                                                    <td>জুবায়ের নাজিম</td>
+                                                    <td>জাতীয় পরিচয়পত্র/জন্ম-নিবন্ধন নম্বর</td>
+                                                    <td>মোবাইল নম্বর</td>
+                                                    <td class="p-1">
+                                                        <p class="border bg-white m-0 py-2 text-center rounded-lg">৫.১
+                                                            অংশ</p>
+                                                    </td>
+                                                    <td class="p-1">
+                                                        <select class="form-control w-100">
+                                                            <option value="">পদক্ষেপ</option>
+                                                            <option value="">দেখুন
+                                                            </option>
+                                                            <option value="">সম্পাদনা
+                                                            </option>
+                                                            <option value="">মুছুন
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center"> ১ </td>
+                                                    <td>জুবায়ের নাজিম</td>
+                                                    <td>জাতীয় পরিচয়পত্র/জন্ম-নিবন্ধন নম্বর</td>
+                                                    <td>মোবাইল নম্বর</td>
+                                                    <td class="p-1">
+                                                        <p class="border bg-white m-0 py-2 text-center  rounded-lg">
+                                                            লিখুন</p>
+                                                    </td>
+                                                    <td class="p-1 text-center">
+                                                        <button type="button"
+                                                            class="w-100 btn active btn-outline-success m-icon-left"><i
+                                                                class="fa fa-plus-circle"></i>
+                                                            সংযুক্ত করুন</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+
                     <div class="mf-component">
                         <div class="header">
                             <p class="number">৩</p>
@@ -328,12 +410,124 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="mf-component four">
                         <div class="header">
-                            <p class="number active">৪</p>
-                            <p class="title">আবেদিত জমির তফসিল নির্বাচন করুন</p>
+                            <p class="number">৪.১</p>
+                            <p class="title">যে দলিলের ভিত্তিতে নামজারি আবেদন করছেন:</p>
+                            <div class="flex-grow-1 text-right">
+                                <button type="button" class="btn active btn-outline-success m-icon-left"><i
+                                        class="fa fa-plus-circle"></i>
+                                    আরো দলিল যুক্ত করুন</button>
+                            </div>
                         </div>
-                        <div class="body">
+                        <div class="body mb-4 p-2">
+                            <div class="row border pt-3 mb-5">
+                                <div class="col-lg-4 col-md-4 mb-4"><label>দলিল ১ </label> <select
+                                        class="form-control form-control-lg">
+                                        <option value="">দলিল নম্বর লিখুন</option>
+                                        <option value="">খতিয়ান নং</option>
+                                        <option value="">হোল্ডিং নং</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-4 mb-4"><label>দলিল তারিখ </label> <input type="text"
+                                        placeholder="দলিল তারিখ" class="form-control form-control-lg">
+
+                                </div>
+                                <div class="col-lg-4 col-md-4 mb-4"><label>দলিল মূল্য </label> <input type="text"
+                                        placeholder="দলিল মূল্য" class="form-control form-control-lg">
+
+                                </div>
+                                <div class="col-lg-4 col-md-4 mb-4"><label>জেলা </label> <select
+                                        class="form-control form-control-lg">
+                                        <option value="">নির্বাচন করুন</option>
+                                        <option value="">খতিয়ান নং</option>
+                                        <option value="">হোল্ডিং নং</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-4 mb-4"><label>সাব-রেজিষ্টার অফিসের নাম </label> <select
+                                        class="form-control form-control-lg">
+                                        <option value="">সাব-রেজিষ্টার অফিসের নাম</option>
+                                        <option value="">খতিয়ান নং</option>
+                                        <option value="">হোল্ডিং নং</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 mb-4 file-add"><label>দলিল সংযুক্ত করুন </label>
+                                    <div class="input-group border p-1 rounded">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupFileAddon01"> <img
+                                                    src="./images/menu-icon-songjukti-white.svg" alt="">
+                                                <span class="pl-2 font-roboto">Select
+                                                    file</span></span>
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                                aria-describedby="inputGroupFileAddon01">
+                                            <label class="custom-file-label" for="inputGroupFile01">দলিল সংযুক্ত
+                                                করুন</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row border pt-3 mt-3 position-relative">
+                                <button type="button" class="btn landinfoCloseBtn btn-danger btn-sm m-1"><i
+                                        class="fa fa-times"></i></button>
+
+                                <div class="col-lg-4 col-md-4 mb-4"><label>দলিল ১ </label> <select
+                                        class="form-control form-control-lg">
+                                        <option value="">দলিল নম্বর লিখুন</option>
+                                        <option value="">খতিয়ান নং</option>
+                                        <option value="">হোল্ডিং নং</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-4 mb-4"><label>দলিল তারিখ </label> <input type="text"
+                                        placeholder="দলিল তারিখ" class="form-control form-control-lg">
+
+                                </div>
+                                <div class="col-lg-4 col-md-4 mb-4"><label>দলিল মূল্য </label> <input type="text"
+                                        placeholder="দলিল মূল্য" class="form-control form-control-lg">
+
+                                </div>
+                                <div class="col-lg-4 col-md-4 mb-4"><label>জেলা </label> <select
+                                        class="form-control form-control-lg">
+                                        <option value="">নির্বাচন করুন</option>
+                                        <option value="">খতিয়ান নং</option>
+                                        <option value="">হোল্ডিং নং</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-4 mb-4"><label>সাব-রেজিষ্টার অফিসের নাম </label> <select
+                                        class="form-control form-control-lg">
+                                        <option value="">সাব-রেজিষ্টার অফিসের নাম</option>
+                                        <option value="">খতিয়ান নং</option>
+                                        <option value="">হোল্ডিং নং</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-4 mb-4 file-add"><label>দলিল সংযুক্ত করুন </label>
+                                    <div class="input-group border p-1 rounded">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupFileAddon01"> <img
+                                                    src="./images/menu-icon-songjukti-white.svg" alt="">
+                                                <span class="pl-2 font-roboto">Select
+                                                    file</span></span>
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                                aria-describedby="inputGroupFileAddon01">
+                                            <label class="custom-file-label" for="inputGroupFile01">দলিল সংযুক্ত
+                                                করুন</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header">
+                            <p class="number">৪.২</p>
+                            <p class="title">আবেদিত জমির তফসিল </p>
+                        </div>
+                        <div class="body  mb-4">
                             <div class="row">
                                 <div class="col-lg-3 col-md-3 mb-4"><label>বিভাগ </label> <select
                                         class="form-control form-control-lg">
@@ -361,6 +555,57 @@
                                 <button type="button" class="btn active btn-outline-success m-icon-left"><i
                                         class="fa fa-plus-circle"></i>
                                     জমি সংযুক্ত করুন</button>
+                            </div>
+                        </div>
+
+                        <div class="header">
+                            <p class="number mb-2">৪.৩</p>
+                            <p class="title mb-2">আদালত কর্তৃক রায়ের কপি সংযুক্ত করুন</p>
+                        </div>
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 mb-4 file-add"><label>সংযুক্ত করুন </label>
+                                    <div class="input-group border p-1 rounded">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupFileAddon01"> <img
+                                                    src="./images/menu-icon-songjukti-white.svg" alt="">
+                                                <span class="pl-2 font-roboto">Select
+                                                    file</span></span>
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                                aria-describedby="inputGroupFileAddon01">
+                                            <label class="custom-file-label" for="inputGroupFile01">সংযুক্ত
+                                                করুন</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header">
+                            <p class="number mb-2">৪.৪</p>
+                            <p class="title mb-2">আদালতের রায়ের বিরুদ্ধে আপিল হয়েছে কিনা তার প্রমাণিক/সার্টিফিকেট কপি
+                                সংযুক্ত করুন</p>
+                        </div>
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 mb-4 file-add"><label>সংযুক্ত করুন </label>
+                                    <div class="input-group border p-1 rounded">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupFileAddon01"> <img
+                                                    src="./images/menu-icon-songjukti-white.svg" alt="">
+                                                <span class="pl-2 font-roboto">Select
+                                                    file</span></span>
+                                        </div>
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                                aria-describedby="inputGroupFileAddon01">
+                                            <label class="custom-file-label" for="inputGroupFile01">সংযুক্ত
+                                                করুন</label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -410,12 +655,12 @@
                                     </select>
                                 </div>
 
-                                <div class="col-lg-4 col-md-4 mb-4 dolil-jukto"><label>দলিল সংযুক্ত করুন </label>
+                                <div class="col-lg-4 col-md-4 mb-4 file-add"><label>দলিল সংযুক্ত করুন </label>
                                     <div class="input-group border p-1 rounded">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text" id="inputGroupFileAddon01"> <img
                                                     src="./images/menu-icon-songjukti-white.svg" alt="">
-                                                <span class="pl-2">Select
+                                                <span class="pl-2 font-roboto">Select
                                                     file</span></span>
                                         </div>
                                         <div class="custom-file">
@@ -461,12 +706,12 @@
                                         <option value="">হোল্ডিং নং</option>
                                     </select>
                                 </div>
-                                <div class="col-lg-4 col-md-4 mb-4 dolil-jukto"><label>দলিল সংযুক্ত করুন </label>
+                                <div class="col-lg-4 col-md-4 mb-4 file-add"><label>দলিল সংযুক্ত করুন </label>
                                     <div class="input-group border p-1 rounded">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text" id="inputGroupFileAddon01"> <img
                                                     src="./images/menu-icon-songjukti-white.svg" alt="">
-                                                <span class="pl-2">Select
+                                                <span class="pl-2 font-roboto">Select
                                                     file</span></span>
                                         </div>
                                         <div class="custom-file">
@@ -535,7 +780,7 @@
                                                 <td>২ একর</td>
                                                 <td>জমি</td>
                                                 <td rowspan="2" class="align-middle">
-                                                    <select class="form-control form-control-sm">
+                                                    <select class="form-control">
                                                         <option value="">পদক্ষেপ</option>
                                                         <option value="">দেখুন
                                                         </option>
@@ -835,7 +1080,7 @@
                                                             <img src="./images/icon-file-upload.svg" alt="">
 
                                                         </span>
-                                                        <span style="white-space: nowrap;">মিউটেশন আবেদন করুন</span>
+                                                        <span class="whitespace-nowrap">মিউটেশন আবেদন করুন</span>
                                                     </a>
                                                 </td>
                                             </tr>
@@ -848,7 +1093,7 @@
                                                             <img src="./images/icon-file-upload.svg" alt="">
 
                                                         </span>
-                                                        <span style="white-space: nowrap;">মিউটেশন আবেদন করুন</span>
+                                                        <span class="whitespace-nowrap">মিউটেশন আবেদন করুন</span>
                                                     </a>
                                                 </td>
                                             </tr>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 @font-face {
   font-family: "Kalpurush";
   src: url("../fonts/Kalpurush/kalpurush-kalpurush.eot");
@@ -10,11 +12,20 @@
   font-style: normal;
 }
 
+.font-roboto {
+  font-family: "Roboto", sans-serif !important;
+}
+
+p {
+  font-family: "Kalpurush" !important;
+}
+
 .ministry-main {
   font-family: "Kalpurush";
 }
-p {
-  font-family: "Kalpurush" !important;
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 /* ministry-modal */
@@ -32,11 +43,19 @@ p {
   margin-bottom: 18px;
 }
 
+.ministry-form .mf-component .input-group-prepend span {
+  background-color: #0db14b;
+  color: white;
+}
+.ministry-form .mf-component .file-add label::after {
+  content: "";
+  padding: 0;
+}
+
 .ministry-form .mf-component .header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  column-gap: 10px;
   row-gap: 5px;
 }
 
@@ -51,6 +70,10 @@ p {
 .ministry-form .mf-component .header .number.active {
   background-color: #f5fff9;
   border: 1px solid #f4f6f9;
+  margin-right: 10px;
+}
+.ministry-form .mf-component .body {
+  padding-left: 8px;
 }
 
 button.one-info {
@@ -82,17 +105,8 @@ button.one-info {
   background-color: #0db14b;
   color: white;
   width: 108px;
-  white-space: nowrap;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-}
-.ministry-form .mf-component.five .dolil-jukto span {
-  background-color: #0db14b;
-  color: white;
-}
-.ministry-form .mf-component.five .dolil-jukto label::after {
-  content: "";
-  padding: 0;
 }
 
 .ministry-form table thead tr th {
@@ -105,9 +119,15 @@ button.one-info {
 .ministry-form table tbody tr td {
   background-color: #fcfcfc;
 }
+.ministry-form table thead tr th {
+  white-space: nowrap !important;
+}
+.ministry-form table tbody tr td {
+  white-space: nowrap !important;
+}
 
 .ministry-form table tbody tr td select {
-  max-width: 90px;
+  width: 91px;
   margin: auto;
   border-color: #0db14b;
 }
