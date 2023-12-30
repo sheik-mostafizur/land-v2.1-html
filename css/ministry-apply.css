@@ -19,6 +19,10 @@
 p {
   font-family: "Kalpurush" !important;
 }
+select.form-control.form-control-lg {
+  font-size: 16px;
+  height: 48px;
+}
 
 .ministry-main {
   font-family: "Kalpurush";
@@ -27,12 +31,23 @@ p {
 .whitespace-nowrap {
   white-space: nowrap;
 }
+.btn-blue-green {
+  background-color: #17a2b7;
+  color: white;
+}
+.btn-blue-green:hover {
+  background-color: #138697;
+  color: white;
+}
 
 /* ministry-modal */
 .ministry-modal .modal-header,
 .ministry-modal .modal-footer {
   background-color: #f4fff8;
   color: #0b9640;
+}
+.ministry-modal .modal-body .card .card-header {
+  background-color: #ebedf0;
 }
 
 .ministry-form .mf-component {
@@ -42,8 +57,12 @@ p {
   padding: 20px;
   margin-bottom: 18px;
 }
-
 .ministry-form .mf-component .input-group-prepend span {
+  background-color: #f3f6fd;
+  border-color: #c2c7d0;
+}
+
+.ministry-form .mf-component .file-add .input-group-prepend span {
   background-color: #0db14b;
   color: white;
 }
