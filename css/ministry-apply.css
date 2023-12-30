@@ -19,6 +19,7 @@
 p {
   font-family: "Kalpurush" !important;
 }
+input[type="date"].form-control.form-control-lg,
 select.form-control.form-control-lg {
   font-size: 16px;
   height: 48px;
