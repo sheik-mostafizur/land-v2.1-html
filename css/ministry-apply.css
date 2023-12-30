@@ -74,6 +74,7 @@ p {
 }
 .ministry-form .mf-component .body {
   padding-left: 8px;
+  padding-right: 8px;
 }
 
 button.one-info {
@@ -111,7 +112,7 @@ button.one-info {
 
 .ministry-form table thead tr th {
   background-color: #f0f0f0;
-  border-color:#dee2e6;
+  border-color: #dee2e6;
   text-align: center;
   font-weight: normal;
 }
