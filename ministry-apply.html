@@ -455,7 +455,7 @@
                                 <div class="bs_radio border rounded py-1 px-2 mr-2 mr-2"><input type="radio"
                                         id="is_record_flow1" value="1" class="form-check-input  required_field"
                                         name="th-yes-no"> <label for="is_record_flow1"
-                                        class="form-check-label">হ্যা</label>
+                                        class="form-check-label">হ্যাঁ</label>
                                 </div>
                                 <div class="bs_radio border rounded py-1 px-2 mr-2 mr-2"><input type="radio"
                                         id="is_record_flow2" value="1" class="form-check-input required_field"
@@ -478,8 +478,7 @@
                                         class="form-control form-control-lg">
                                 </div>
                                 <div class="col-lg-4 col-md-6 d-flex align-items-end mt-3">
-                                    <button type="button"
-                                        class="btn active btn-outline-primary m-icon-left whitespace-nowrap"><i
+                                    <button type="button" class="btn btn-blue m-icon-left whitespace-nowrap"><i
                                             class="fa fa-save"></i>
                                         আরো খতিয়ান সংযুক্ত করুন</button>
                                 </div>
@@ -523,8 +522,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <button type="button" class="btn active btn-primary"><i
-                                                class="fa fa-edit"></i></button>
+                                        <button type="button" class="btn btn-blue"><i class="fa fa-edit"></i></button>
                                     </div>
                                     <div class="table-responsive">
                                         <table class="table table-bordered">
@@ -1041,10 +1039,307 @@
                             </div>
                             <div class="d-flex border rounded-lg align-items-center justify-content-center"
                                 style="height: 136px;">
+                                <div class="ministry-modal">
 
-                                <button type="button" class="btn active btn-outline-success m-icon-left"><i
-                                        class="fa fa-plus-circle"></i>
-                                    জমি সংযুক্ত করুন</button>
+                                    <!-- modal button -->
+                                    <button type="button" class="btn active btn-outline-success m-icon-left"
+                                        data-toggle="modal" data-target="#mfcFour_Two"><i class="fa fa-plus-circle"></i>
+                                        জমি সংযুক্ত করুন</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="mfcFour_Two" tabindex="-1"
+                                        aria-labelledby="mfcFour_TwoLabel" style="display: none;" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title flex-grow-1 text-center"
+                                                        id="mfcFour_TwoLabel">
+                                                        জমির তথ্য
+                                                        <br>
+                                                        <span class="text-dark pt-3">(জমির পরিমাণে একরে প্রদান করতে হবে।
+                                                            একরে
+                                                            কিভাবে পরিমাণ নির্ণয়
+                                                            করবেন জানতে <a href="#" class="text-primary">ক্লিক করুন</a>
+                                                            )</span>
+                                                    </h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-md-6 mb-4"><label>দলিল নম্বর*</label>
+                                                            <select class="form-control form-control-lg">
+                                                                <option value="">নির্বাচন করুন</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6"><label>নিবন্ধন নম্বর</label>
+                                                            <div class="input-group input-group-lg mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="নিবন্ধন নম্বর"
+                                                                    aria-label="নিবন্ধন নম্বর"
+                                                                    aria-describedby="button-addon2">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn active btn-outline-success"
+                                                                        type="button" id="button-addon2">যাচাই</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 mb-4"><label>খতিয়ানের ধরণ*
+                                                            </label>
+                                                            <select class="form-control form-control-lg">
+                                                                <option value="">নির্বাচন করুন</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6"><label>খতিয়ান নং</label>
+                                                            <div class="input-group input-group-lg mb-3">
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="খতিয়ান নং" aria-label="খতিয়ান নং"
+                                                                    aria-describedby="button-addon2">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn active btn-outline-success"
+                                                                        type="button" id="button-addon2">যাচাই</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-3">
+                                                        <div
+                                                            class="card-header d-flex align-items-center justify-content-between">
+                                                            <span>দাগের তথ্য</span>
+                                                            <button type="button"
+                                                                class="btn btn-blue-green m-icon-left whitespace-nowrap"><i
+                                                                    class="fa fa-plus-circle"></i>আরো দাগ সংযুক্ত
+                                                                করুন</button>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-md-5 mb-3"><label>দাগ নং</label>
+                                                                    <input type="text" placeholder="দাগ নং"
+                                                                        class="form-control form-control-lg">
+
+                                                                </div>
+                                                                <div class="col-md-6 mb-3"><label>জমির পরিমাণ
+                                                                        (একরে)</label>
+                                                                    <div class="input-group input-group-lg">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text"
+                                                                                id="inputGroup-sizing-default">একর</span>
+                                                                        </div>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="লিখুন">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-5"><label>দাগ নং</label>
+                                                                    <input type="text" placeholder="দাগ নং"
+                                                                        class="form-control form-control-lg">
+
+                                                                </div>
+                                                                <div class="col-md-6"><label>জমির পরিমাণ
+                                                                        (একরে)</label>
+                                                                    <div class="input-group input-group-lg">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text"
+                                                                                id="inputGroup-sizing-default">একর</span>
+                                                                        </div>
+                                                                        <input type="text" class="form-control"
+                                                                            placeholder="লিখুন">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-1 d-flex align-items-end">
+                                                                    <button type="button"
+                                                                        class="btn btn-danger btn-sm m-1"
+                                                                        style="padding: 2px 5px;"><i
+                                                                            class="fa fa-times"></i></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col"
+                                                                                class="border-bottom-0  border-right-0">
+                                                                                বাড়ি নং</th>
+                                                                            <th scope="col"
+                                                                                class="border-bottom-0 border-left-0 border-right-0">
+                                                                                বাড়ির নাম</th>
+                                                                            <th scope="col"
+                                                                                class="border-bottom-0 border-left-0 border-right-0">
+                                                                                ফ্ল্যাট রয়েছে কিনা?</th>
+                                                                            <th scope="col"
+                                                                                class="border-bottom-0 border-left-0">
+                                                                                পদক্ষেপ</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="py-2"><input type="text"
+                                                                                    placeholder="দাগ নং"
+                                                                                    class="form-control"
+                                                                                    style="min-width: 100px;"> </td>
+                                                                            <td class="py-2"><input type="text"
+                                                                                    placeholder="দাগ নং"
+                                                                                    class="form-control"
+                                                                                    style="min-width: 100px;"> </td>
+                                                                            <td class="py-2">
+                                                                                <div
+                                                                                    class="d-flex align-items-center justify-content-center">
+                                                                                    <div
+                                                                                        class="bs_radio border rounded py-1 px-2 mr-2 mb-0">
+                                                                                        <input type="radio"
+                                                                                            id="is_record_flow1"
+                                                                                            value="1"
+                                                                                            class="form-check-input  required_field"
+                                                                                            name="th-yes-no"> <label
+                                                                                            for="is_record_flow1"
+                                                                                            class="form-check-label">হ্যাঁ</label>
+                                                                                    </div>
+
+                                                                                    <div
+                                                                                        class="bs_radio border rounded py-1 px-2 mr-2 mb-0">
+                                                                                        <input type="radio"
+                                                                                            id="is_record_flow2"
+                                                                                            value="1"
+                                                                                            class="form-check-input required_field"
+                                                                                            name="th-yes-no"> <label
+                                                                                            for="is_record_flow2"
+                                                                                            class="form-check-label">না</label>
+                                                                                    </div>
+                                                                                    <input type="text"
+                                                                                        placeholder="দাগ নং"
+                                                                                        class="form-control mr-2"
+                                                                                        style="min-width: 100px;">
+                                                                                    <input type="text"
+                                                                                        placeholder="দাগ নং"
+                                                                                        class="form-control"
+                                                                                        style="min-width: 100px;">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td class="py-2 align-middle text-center">
+                                                                                <button class="btn btn-sm btn-success"
+                                                                                    style="padding: 2px 5px;"><i
+                                                                                        class="fa fa-plus"></i>
+                                                                                </button>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <p class="mb-2">আবেদনে বর্ণিত তফসিল</p>
+                                                        <div class="bs_radio border rounded py-1 px-2 mr-2 mr-2"><input
+                                                                type="radio" id="is_record_flow1" value="1"
+                                                                class="form-check-input  required_field"
+                                                                name="th-yes-no"> <label for="is_record_flow1"
+                                                                class="form-check-label">জমি</label>
+                                                        </div>
+                                                        <div class="bs_radio border rounded py-1 px-2 mr-2 mr-2"><input
+                                                                type="radio" id="is_record_flow2" value="1"
+                                                                class="form-check-input required_field"
+                                                                name="th-yes-no"> <label for="is_record_flow2"
+                                                                class="form-check-label">বাড়ি/এপার্টমেন্ট / ফ্লোর
+                                                                স্পেস</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <p class="mb-2">আবেদিত তফসিলটি রাজউক, জাতীয় গৃহায়ন কর্তৃপক্ষসহ
+                                                            বিভিন্ন সরকারি হাউজিং প্রকল্প এলাকায় কিনা?</p>
+                                                        <div class="bs_radio border rounded py-1 px-2 mr-2 mr-2"><input
+                                                                type="radio" id="is_record_flow1" value="1"
+                                                                class="form-check-input  required_field"
+                                                                name="th-yes-no"> <label for="is_record_flow1"
+                                                                class="form-check-label">হ্যাঁ</label>
+                                                        </div>
+                                                        <div class="bs_radio border rounded py-1 px-2 mr-2 mr-2"><input
+                                                                type="radio" id="is_record_flow2" value="1"
+                                                                class="form-check-input required_field"
+                                                                name="th-yes-no"> <label for="is_record_flow2"
+                                                                class="form-check-label">না</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-3">
+                                                        <div
+                                                            class="card-header d-flex align-items-center justify-content-between">
+                                                            <span>০১</span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-6 mb-4"><label>প্রকল্পের
+                                                                        নাম</label>
+                                                                    <input type="text" placeholder="লিখুন"
+                                                                        class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 mb-4"><label>ব্লক
+                                                                        নম্বর</label>
+                                                                    <input type="text" placeholder="লিখুন"
+                                                                        class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 mb-4"><label>রোড
+                                                                        নম্বর</label>
+                                                                    <input type="text" placeholder="লিখুন"
+                                                                        class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 mb-4"><label>প্লট নম্বর/
+                                                                        বাড়ি নম্বর</label>
+                                                                    <input type="text" placeholder="লিখুন"
+                                                                        class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 mb-4"><label>ফ্লোর ও
+                                                                        ফ্লাটের তথ্য</label>
+                                                                    <input type="text" placeholder="লিখুন"
+                                                                        class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 mb-4">
+                                                                    <label>ঠিকানা</label>
+                                                                    <input type="text" placeholder="লিখুন"
+                                                                        class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="col-lg-6 col-xl-5 col-md-12 mb-4 file-add">
+                                                                    <label>হস্তান্তর করার অনুমোদনপত্র সংযুক্ত
+                                                                        করুন</label>
+                                                                    <div class="input-group border p-1 rounded">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text"
+                                                                                id="inputGroupFileAddon01"> <img
+                                                                                    src="./images/menu-icon-songjukti-white.svg"
+                                                                                    alt="">
+                                                                                <span class="pl-2 font-roboto">Select
+                                                                                    file</span></span>
+                                                                        </div>
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input"
+                                                                                id="inputGroupFile01"
+                                                                                aria-describedby="inputGroupFileAddon01">
+                                                                            <label class="custom-file-label"
+                                                                                for="inputGroupFile01">অনুমোদনপত্র
+                                                                                সংযুক্ত করুন</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer justify-content-center">
+                                                    <button type="button" class="btn btn-outline-danger mr-3"
+                                                        data-dismiss="modal"><i class="fa fa-times-circle"></i>
+                                                        বাতিল</button>
+                                                    <button type="button" class="btn btn-success m-icon-left"><i
+                                                            class="fa fa-save"></i>সংরক্ষণ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -2074,6 +2369,45 @@
                                             id="data-jorip22" value="1" class="form-check-input required_field"
                                             name="data-jorip12">
                                         <label for="data-jorip22" class="form-check-label">না</label>
+                                    </div>
+                                </div>
+                                <div class="border pt-4 pb-3 px-4 bg-light mb-4" style="border-radius: 10px;">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">ক্রমিক</th>
+                                                    <th scope="col">নাম</th>
+                                                    <th scope="col">জাতীয় পরিচয়পত্র/জন্ম-নিবন্ধন নম্বর </th>
+                                                    <th scope="col">মোবাইল নম্বর</th>
+                                                    <th scope="col">যাচাই</th>
+                                                    <th scope="col">পদক্ষেপ</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="border-bottom">
+                                                    <td class="text-center"> ১ </td>
+                                                    <td><img class="pr-2" src="./images/user-avater.png" alt=""><span
+                                                            class="pr-4">জুবায়ের
+                                                            নাজিম</span></td>
+                                                    <td>৫০৯৯৭৯৮৬০৪</td>
+                                                    <td>৫০৯৯৭৯৮৬০৪</td>
+                                                    <td>জাতীয় পরিচয়পত্র</td>
+                                                    <td>
+                                                        <select class="form-control form-control-sm">
+                                                            <option value="">পদক্ষেপ</option>
+                                                            <option value="">দেখুন
+                                                            </option>
+                                                            <option value="">সম্পাদনা
+                                                            </option>
+                                                            <option value="">মুছুন
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
                                     </div>
                                 </div>
                             </div>
