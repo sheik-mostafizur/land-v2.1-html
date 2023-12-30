@@ -15,12 +15,16 @@
 .font-roboto {
   font-family: "Roboto", sans-serif !important;
 }
+.font-kalpurush {
+  font-family: "Kalpurush", sans-serif !important;
+}
 
-p {
+.ministry-main p {
   font-family: "Kalpurush" !important;
 }
-input[type="date"].form-control.form-control-lg,
-select.form-control.form-control-lg {
+.ministry-main input[type="date"].form-control.form-control-lg,
+.ministry-main select.form-control.form-control-lg,
+.ministry-main .input-group-lg .input-group-prepend .input-group-text {
   font-size: 16px;
   height: 48px;
 }
@@ -51,6 +55,22 @@ select.form-control.form-control-lg {
 }
 
 /* ministry-modal */
+
+.ministry-main .modal .modal-dialog .btn,
+.ministry-main .modal .modal-title,
+.ministry-main .modal .modal-title span,
+.ministry-main .modal .modal-body p,
+.ministry-main .modal .modal-body a,
+.ministry-main .modal .modal-body span,
+.ministry-main .modal .modal-body li,
+.ministry-main .modal .modal-body div,
+.ministry-main .modal .modal-body {
+  font-family: "Kalpurush" !important;
+}
+
+.ministry-modal {
+  font-family: "Kalpurush";
+}
 .ministry-modal .modal-header,
 .ministry-modal .modal-footer {
   background-color: #f4fff8;
@@ -60,6 +80,9 @@ select.form-control.form-control-lg {
   background-color: #ebedf0;
 }
 
+.ministry-main .ministry-form .add_document p {
+  font-family: "Roboto", sans-serif !important;
+}
 .ministry-form .mf-component {
   background-color: white;
   border-radius: 6px;
