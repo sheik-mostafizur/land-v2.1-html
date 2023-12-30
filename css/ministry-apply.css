@@ -147,15 +147,15 @@ button.one-info {
   white-space: nowrap !important;
 }
 
-.ministry-form table tbody tr td select {
+.ministry-form table tbody tr td > select {
   width: 91px;
   margin: auto;
   border-color: #0db14b;
 }
-.ministry-form table tbody tr td select:hover {
+.ministry-form table tbody tr td > select:hover {
   background-color: #42a045;
 }
-.ministry-form table tbody tr td select:focus {
+.ministry-form table tbody tr td > select:focus {
   background-color: #fcfcfc;
 }
 

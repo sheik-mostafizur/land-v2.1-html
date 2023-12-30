@@ -582,7 +582,7 @@
                                                             <div class="modal fade" id="mfcFour" tabindex="-1"
                                                                 aria-labelledby="mfcFourLabel" aria-hidden="true">
                                                                 <div
-                                                                    class="modal-dialog modal-xl modal-dialog-centered">
+                                                                    class="modal-dialog modal-lg modal-dialog-centered">
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
                                                                             <h5 class="modal-title flex-grow-1 text-center"
@@ -593,9 +593,79 @@
                                                                                 <span aria-hidden="true">&times;</span>
                                                                             </button>
                                                                         </div>
-                                                                        <div class="modal-body">
+                                                                        <div class="modal-body text-left">
+                                                                            <div
+                                                                                class="mb-3 d-flex align-items-center flex-wrap">
+                                                                                <div
+                                                                                    class="bs_radio border rounded py-1 px-2 mr-2 mr-2">
+                                                                                    <input type="radio"
+                                                                                        id="is_record_flow1" value="1"
+                                                                                        class="form-check-input  required_field"
+                                                                                        name="th-yes-no"> <label
+                                                                                        for="is_record_flow1"
+                                                                                        class="form-check-label">প্রাপ্ত
+                                                                                        বয়স্ক</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="bs_radio border rounded py-1 px-2 mr-2 mr-2">
+                                                                                    <input type="radio"
+                                                                                        id="is_record_flow2" value="1"
+                                                                                        class="form-check-input required_field"
+                                                                                        name="th-yes-no"> <label
+                                                                                        for="is_record_flow2"
+                                                                                        class="form-check-label">অপ্রাপ্ত
+                                                                                        বয়স্ক</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="bs_radio border rounded py-1 px-2 mr-2 mr-2">
+                                                                                    <input type="radio"
+                                                                                        id="is_record_flow2" value="1"
+                                                                                        class="form-check-input required_field"
+                                                                                        name="th-yes-no"> <label
+                                                                                        for="is_record_flow2"
+                                                                                        class="form-check-label">প্রবাসী</label>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="bs_radio border rounded py-1 px-2 mr-2 mr-2">
+                                                                                    <input type="radio"
+                                                                                        id="is_record_flow2" value="1"
+                                                                                        class="form-check-input required_field"
+                                                                                        name="th-yes-no"> <label
+                                                                                        for="is_record_flow2"
+                                                                                        class="form-check-label">মুক্তিযোদ্ধা</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="mb-3">
+                                                                                <p class="mb-2">আবেদনকারী / গ্রহীতা</p>
+                                                                                <div
+                                                                                    class="d-flex align-items-center flex-wrap">
+                                                                                    <div
+                                                                                        class="bs_radio border rounded py-1 px-2 mr-2 mr-2">
+                                                                                        <input type="radio"
+                                                                                            id="is_record_flow1"
+                                                                                            value="1"
+                                                                                            class="form-check-input  required_field"
+                                                                                            name="th-yes-no"> <label
+                                                                                            for="is_record_flow1"
+                                                                                            class="form-check-label">জাতীয়
+                                                                                            পরিচয় পত্র</label>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="bs_radio border rounded py-1 px-2 mr-2 mr-2">
+                                                                                        <input type="radio"
+                                                                                            id="is_record_flow2"
+                                                                                            value="1"
+                                                                                            class="form-check-input required_field"
+                                                                                            name="th-yes-no"> <label
+                                                                                            for="is_record_flow2"
+                                                                                            class="form-check-label">জন্ম
+                                                                                            নিবন্ধন</label>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
                                                                             <div class="row">
-                                                                                <div class="col-lg-9">
+                                                                                <div class="col-md-9">
                                                                                     <label for="add_document"
                                                                                         class="add_document w-100"
                                                                                         style="border: 1px dashed #d0d5dd;">
@@ -631,13 +701,12 @@
                                                                                                 </defs>
                                                                                             </svg>
                                                                                             <p class="font-roboto mb-0">
-                                                                                                <b>Document</b>
+                                                                                                <b>Photo</b>
                                                                                                 <br>
                                                                                                 Browse and chose the
-                                                                                                files your from your
+                                                                                                files <br> your from
+                                                                                                your
                                                                                                 computer
-                                                                                                <br>
-                                                                                                File Format [ .pdf]
                                                                                             </p>
                                                                                             <svg class="my-3" width="33"
                                                                                                 height="33"
@@ -659,10 +728,125 @@
 
                                                                                     </label>
                                                                                 </div>
-                                                                                <div class="col-lg-3">
+                                                                                <div class="col-md-3">
                                                                                     <img src="./images/proifle.png"
                                                                                         alt="">
                                                                                 </div>
+                                                                            </div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-6 mb-3">
+                                                                                    <label>জাতীয় পরিচয়পত্র</label>
+                                                                                    <input type="text"
+                                                                                        placeholder="জাতীয় পরিচয়পত্র"
+                                                                                        class="form-control form-control-lg">
+                                                                                </div>
+                                                                                <div class="col-md-6 mb-3">
+                                                                                    <label>মুক্তিযোদ্ধা সনদ নং</label>
+                                                                                    <input type="text"
+                                                                                        placeholder="মুক্তিযোদ্ধা সনদ নং"
+                                                                                        class="form-control form-control-lg">
+                                                                                </div>
+                                                                                <div class="col-md-6 mb-3">
+                                                                                    <label>আবেদনকারীর নাম</label>
+                                                                                    <input type="text"
+                                                                                        placeholder="আবেদনকারীর নাম"
+                                                                                        class="form-control form-control-lg">
+                                                                                </div>
+                                                                                <div class="col-md-6 mb-3">
+                                                                                    <label>পিতার নাম</label>
+                                                                                    <input type="text"
+                                                                                        placeholder="পিতার নাম"
+                                                                                        class="form-control form-control-lg">
+                                                                                </div>
+                                                                                <div class="col-md-6 mb-3">
+                                                                                    <label>জন্মতারিখ</label>
+                                                                                    <input type="date"
+                                                                                        placeholder="জন্মতারিখ"
+                                                                                        class="form-control form-control-lg">
+                                                                                </div>
+                                                                                <div class="col-md-6 mb-3">
+                                                                                    <label>মেইল</label>
+                                                                                    <input type="text"
+                                                                                        placeholder="মেইল"
+                                                                                        class="form-control form-control-lg">
+                                                                                </div>
+                                                                                <div class="col-md-6 mb-3">
+                                                                                    <label>মাতার নামঃ</label>
+                                                                                    <input type="text"
+                                                                                        placeholder="মাতার নামঃ"
+                                                                                        class="form-control form-control-lg">
+                                                                                </div>
+                                                                                <div class="col-md-6 mb-3">
+                                                                                    <label>মোবাইল নম্বর</label>
+                                                                                    <input type="text"
+                                                                                        placeholder="মোবাইল নম্বর"
+                                                                                        class="form-control form-control-lg">
+                                                                                </div>
+
+                                                                                <div class="col-md-4 mb-3"><label>বিভাগ
+                                                                                    </label> <select
+                                                                                        class="form-control form-control-lg">
+                                                                                        <option value="">নির্বাচন করুন
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="col-md-4 mb-3"><label>জেলা
+                                                                                    </label> <select
+                                                                                        class="form-control form-control-lg">
+                                                                                        <option value="">নির্বাচন করুন
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="col-md-4 mb-3"><label>উপজেলা
+                                                                                    </label> <select
+                                                                                        class="form-control form-control-lg">
+                                                                                        <option value="">নির্বাচন করুন
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div class="col-12 mb-3">
+                                                                                    <label>ঠিকানা</label>
+                                                                                    <input type="text"
+                                                                                        placeholder="ঠিকানা"
+                                                                                        class="form-control form-control-lg">
+                                                                                </div>
+                                                                                <div class="col-md-6 mb-3">
+                                                                                    <label>জমিতে আবেদনকারীর অংশ</label>
+                                                                                    <input type="text"
+                                                                                        placeholder="জমিতে আবেদনকারীর অংশ"
+                                                                                        class="form-control form-control-lg">
+                                                                                </div>
+                                                                                <div class="offset-md-6"></div>
+                                                                                <div class="col-md-6 mb-3">
+                                                                                    <button type="button"
+                                                                                        class="btn btn-outline-success m-icon-left"><svg
+                                                                                            width="11" height="12"
+                                                                                            viewBox="0 0 11 12"
+                                                                                            fill="none"
+                                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                                            <g
+                                                                                                clip-path="url(#clip0_7800_50427)">
+                                                                                                <path
+                                                                                                    d="M3.70253 3.02326L5.04359 1.68173L5.04039 8.75737C5.04039 9.0105 5.24558 9.21569 5.49871 9.21569C5.75183 9.21569 5.95703 9.0105 5.95703 8.75737L5.96023 1.68953L7.29488 3.02463C7.47696 3.20048 7.7671 3.19545 7.94295 3.01338C8.1145 2.83577 8.1145 2.55418 7.94295 2.37657L6.47127 0.903041C5.93447 0.365897 5.06389 0.365617 4.52675 0.902418C4.52653 0.902633 4.52634 0.902826 4.52612 0.903041L3.05444 2.37519C2.8786 2.55727 2.88362 2.84741 3.0657 3.02326C3.24331 3.19481 3.5249 3.19481 3.70253 3.02326Z"
+                                                                                                    fill="#0DB14B" />
+                                                                                                <path
+                                                                                                    d="M10.5415 7.83203C10.2883 7.83203 10.0831 8.03723 10.0831 8.29035V10.1237C10.0831 10.3768 9.87795 10.582 9.62483 10.582H1.37496C1.12183 10.582 0.916638 10.3768 0.916638 10.1237V8.29035C0.916638 8.03723 0.711444 7.83203 0.458319 7.83203C0.205194 7.83203 0 8.03723 0 8.29035V10.1237C0 10.883 0.615604 11.4986 1.37498 11.4986H9.62485C10.3842 11.4986 10.9998 10.883 10.9998 10.1237V8.29035C10.9998 8.03723 10.7946 7.83203 10.5415 7.83203Z"
+                                                                                                    fill="#0DB14B" />
+                                                                                            </g>
+                                                                                            <defs>
+                                                                                                <clipPath
+                                                                                                    id="clip0_7800_50427">
+                                                                                                    <rect width="11"
+                                                                                                        height="11"
+                                                                                                        fill="white"
+                                                                                                        transform="translate(0 0.5)" />
+                                                                                                </clipPath>
+                                                                                            </defs>
+                                                                                        </svg>
+                                                                                        মুক্তিযোদ্ধা সনদের সার্টিফাইড
+                                                                                        কপি সংযুক্ত করুন</button>
+                                                                                </div>
+                                                                                <div class="offset-md-6"></div>
                                                                             </div>
                                                                         </div>
                                                                         <div
@@ -674,7 +858,7 @@
                                                                                 বাতিল</button>
                                                                             <button type="button"
                                                                                 class="btn btn-success m-icon-left"><i
-                                                                                    class="fa fa-save"></i>সংরক্ষণ</button>
+                                                                                    class="fa fa-save"></i>যাচা্ই</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>
