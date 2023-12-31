@@ -1,6 +1,57 @@
-.mutation-form .bs_radio:has([type="radio"]:checked) {
-  background-color: #00684d;
+.court-fees-radio {
+  display: inline-block;
 }
-.mutation-form .bs_radio [type="radio"]:checked + label {
+.court-fees-radio [type="radio"] {
+  display: none;
+}
+.court-fees-radio + .court-fees-radio {
+  margin-top: 15px;
+}
+.court-fees-radio label {
+  display: inline-block;
+  padding: 9px 10px 3px 45px;
+  background: #ffffff;
+  border: 1px solid #a5abb3;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+  position: relative;
+}
+.court-fees-radio label:after,
+.court-fees-radio label:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.court-fees-radio label:after {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #858c94;
+  left: 10px;
+}
+.court-fees-radio label:before {
+  background: #ffffff;
+  height: 10px;
+  width: 10px;
+  left: 15px;
+  top: 14px;
+  opacity: 0;
+  transform: scale(0.5);
+  visibility: hidden;
+  transition: 0.3s ease-in-out 0s;
+}
+.court-fees-radio [type="radio"]:checked ~ label {
+  border-color: #00684d;
+  background-color: #00684d;
   color: white;
+}
+.court-fees-radio [type="radio"]:checked ~ label::before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.court-fees-radio [type="radio"]:checked ~ label::after {
+  border-color: white;
 }
