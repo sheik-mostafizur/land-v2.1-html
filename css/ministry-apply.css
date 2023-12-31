@@ -104,6 +104,24 @@
   padding: 0;
 }
 
+.ministry-form .mf-component .header h6 {
+  font-family: "Kalpurush" !important;
+}
+.ministry-form .mf-component .header h6 span {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kalpurush" !important;
+}
+.ministry-form .mf-component .header h6 span.active {
+  background-color: #f5fff9;
+  border: 1px solid #f4f6f9;
+  margin-right: 10px;
+}
+
 .ministry-form .mf-component .header {
   display: flex;
   flex-wrap: wrap;
