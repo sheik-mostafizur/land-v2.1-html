@@ -20,6 +20,8 @@
 
     <link rel="stylesheet" href="./css/ministry-apply.css">
 
+    <!-- include alpinejs -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
@@ -100,7 +102,7 @@
                             </div>
                             <!-- end ৮.১ -->
                             <!-- start ৮.২ -->
-                            <div>
+                            <div x-data="{isShow: false}">
                                 <div class="header">
                                     <h6 class="mb-1"><span class="mr-2">৮.২</span>আবেদিত জমি গ্রহীতার দখলে আছে কিনা ?
                                     </h6>
@@ -108,24 +110,26 @@
                                 <div>
                                     <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio"
                                             id="ghoshona_record821" value="1" class="form-check-input  required_field"
-                                            name="yes_no82"> <label for="ghoshona_record821"
+                                            name="yes_no82" @click="isShow=false"> <label for="ghoshona_record821"
                                             class="form-check-label">হ্যাঁ</label>
                                     </div>
                                     <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio"
                                             id="ghoshona_record822" value="1" class="form-check-input required_field"
-                                            name="yes_no82"> <label for="ghoshona_record822"
+                                            name="yes_no82" @click="isShow=true"> <label for="ghoshona_record822"
                                             class="form-check-label">না</label>
                                     </div>
                                 </div>
                                 <!-- for no check -->
-                                <div class="form-group">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                        placeholder="ব্যাখ্যা করুন"></textarea>
-                                </div>
+                                <template x-if="isShow">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                            placeholder="ব্যাখ্যা করুন"></textarea>
+                                    </div>
+                                </template>
                             </div>
                             <!-- end ৮.২ -->
                             <!-- start ৮.৩ -->
-                            <div>
+                            <div x-data="{isShow: false}">
                                 <div class="header">
                                     <h6 class="mb-1"><span class="mr-2">৮.৩</span>আবেদিত জমিতে আদালতের নিষেধাজ্ঞা আছে
                                         কিনা?</h6>
@@ -133,49 +137,58 @@
                                 <div>
                                     <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio"
                                             id="ghoshona_record831" value="1" class="form-check-input  required_field"
-                                            name="yes_no83"> <label for="ghoshona_record831"
+                                            name="yes_no83" @click="isShow=true"> <label for="ghoshona_record831"
                                             class="form-check-label">হ্যাঁ</label>
                                     </div>
                                     <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio"
                                             id="ghoshona_record832" value="1" class="form-check-input required_field"
-                                            name="yes_no83"> <label for="ghoshona_record832"
+                                            name="yes_no83" @click="isShow=false"> <label for="ghoshona_record832"
                                             class="form-check-label">না</label>
                                     </div>
                                 </div>
                                 <!-- for yes check -->
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 mb-2"><label>মামলা নম্বর</label> <input type="text"
-                                            placeholder="মামলা নম্বর" class="form-control form-control-lg">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 mb-2"><label>কোর্টের নাম</label> <input type="text"
-                                            placeholder="কোর্টের নাম" class="form-control form-control-lg">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 mb-2"><label>মামলার সর্বশেষ অবস্থা</label> <input
-                                            type="text" placeholder="মামলার সর্বশেষ অবস্থা"
-                                            class="form-control form-control-lg">
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 mb-2"><label>তফসিলভুক্ত জমির তথ্য</label> <input
-                                            type="text" placeholder="তফসিলভুক্ত জমির তথ্য"
-                                            class="form-control form-control-lg">
-                                    </div>
-                                </div>
+                                <template x-if="isShow">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-6 mb-2"><label>মামলা নম্বর</label> <input
+                                                    type="text" placeholder="মামলা নম্বর"
+                                                    class="form-control form-control-lg">
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 mb-2"><label>কোর্টের নাম</label> <input
+                                                    type="text" placeholder="কোর্টের নাম"
+                                                    class="form-control form-control-lg">
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 mb-2"><label>মামলার সর্বশেষ অবস্থা</label>
+                                                <input type="text" placeholder="মামলার সর্বশেষ অবস্থা"
+                                                    class="form-control form-control-lg">
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 mb-2"><label>তফসিলভুক্ত জমির তথ্য</label>
+                                                <input type="text" placeholder="তফসিলভুক্ত জমির তথ্য"
+                                                    class="form-control form-control-lg">
+                                            </div>
+                                        </div>
 
-                                <div>
-                                    <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio"
-                                            id="ghoshona_record_ostantor831" value="1"
-                                            class="form-check-input  required_field" name="yes_no_ostantor83"> <label
-                                            for="ghoshona_record_ostantor831" class="form-check-label">হ্যাঁ</label>
+                                        <div>
+                                            <p class="mb-1">হস্তান্তরে নিষেধাজ্ঞা আছে কিনা</p>
+                                            <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio"
+                                                    id="ghoshona_record_ostantor831" value="1"
+                                                    class="form-check-input  required_field" name="yes_no_ostantor83">
+                                                <label for="ghoshona_record_ostantor831"
+                                                    class="form-check-label">হ্যাঁ</label>
+                                            </div>
+                                            <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio"
+                                                    id="ghoshona_record_ostantor832" value="1"
+                                                    class="form-check-input required_field" name="yes_no_ostantor83">
+                                                <label for="ghoshona_record_ostantor832"
+                                                    class="form-check-label">না</label>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio"
-                                            id="ghoshona_record_ostantor832" value="1"
-                                            class="form-check-input required_field" name="yes_no_ostantor83"> <label
-                                            for="ghoshona_record_ostantor832" class="form-check-label">না</label>
-                                    </div>
-                                </div>
+                                </template>
                             </div>
                             <!-- end ৮.৩ -->
                             <!-- start ৮.৪ -->
-                            <div>
+                            <div x-data="{isShow: false}">
                                 <div class="header">
                                     <h6 class="mb-1"><span class="mr-2">৮.৪</span>আবেদিত জমিতে সরকারি স্বার্থ আছে কিনা ?
                                     </h6>
@@ -183,70 +196,73 @@
                                 <div>
                                     <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio"
                                             id="ghoshona_record841" value="1" class="form-check-input  required_field"
-                                            name="yes_no84"> <label for="ghoshona_record841"
+                                            name="yes_no84" @click="isShow=true"> <label for="ghoshona_record841"
                                             class="form-check-label">হ্যাঁ</label>
                                     </div>
                                     <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio"
                                             id="ghoshona_record842" value="1" class="form-check-input required_field"
-                                            name="yes_no84"> <label for="ghoshona_record842"
+                                            name="yes_no84" @click="isShow=false"> <label for="ghoshona_record842"
                                             class="form-check-label">না</label>
                                     </div>
                                 </div>
                                 <!-- for yes -->
-                                <div>
-                                    <p class="mb-2">কিভাবে সরকারি স্বার্থ রয়েছে ?</p>
-                                    <div class="bs_checkbox"><input type="checkbox" id="sartho841"
-                                            class="form-check-input ownership_reference_check" value="খাস">
-                                        <label for="sartho841" class="form-check-label">খাস</label>
+                                <template x-if="isShow">
+                                    <div>
+                                        <p class="mb-2">কিভাবে সরকারি স্বার্থ রয়েছে ?</p>
+                                        <div class="bs_checkbox"><input type="checkbox" id="sartho841"
+                                                class="form-check-input ownership_reference_check" value="খাস">
+                                            <label for="sartho841" class="form-check-label">খাস</label>
+                                        </div>
+                                        <div class="bs_checkbox"><input type="checkbox" id="sartho842"
+                                                class="form-check-input ownership_reference_check" value="অর্পিত">
+                                            <label for="sartho842" class="form-check-label">অর্পিত</label>
+                                        </div>
+                                        <div class="bs_checkbox"><input type="checkbox" id="sartho843"
+                                                class="form-check-input ownership_reference_check" value="পরিত্যক্ত">
+                                            <label for="sartho843" class="form-check-label">পরিত্যক্ত</label>
+                                        </div>
+                                        <div class="bs_checkbox"><input type="checkbox" id="sartho844"
+                                                class="form-check-input ownership_reference_check" value="ওয়াকফ">
+                                            <label for="sartho844" class="form-check-label">ওয়াকফ</label>
+                                        </div>
+                                        <div class="bs_checkbox"><input type="checkbox" id="sartho845"
+                                                class="form-check-input ownership_reference_check" value="বিনিময়">
+                                            <label for="sartho845" class="form-check-label">বিনিময়
+                                            </label>
+                                        </div>
+                                        <div class="bs_checkbox"><input type="checkbox" id="sartho846"
+                                                class="form-check-input ownership_reference_check" value="দেবত্তর">
+                                            <label for="sartho846" class="form-check-label">দেবত্তর</label>
+                                        </div>
+                                        <div class="bs_checkbox"><input type="checkbox" id="sartho847"
+                                                class="form-check-input ownership_reference_check" value="অধিগ্রহণকৃত">
+                                            <label for="sartho847" class="form-check-label">অধিগ্রহণকৃত</label>
+                                        </div>
+                                        <div class="bs_checkbox"><input type="checkbox" id="sartho848"
+                                                class="form-check-input ownership_reference_check" value="খাসমহাল">
+                                            <label for="sartho848" class="form-check-label">খাসমহাল</label>
+                                        </div>
+                                        <div class="bs_checkbox"><input type="checkbox" id="sartho849"
+                                                class="form-check-input ownership_reference_check"
+                                                value="কোর্ট অফ ওয়ার্ডস">
+                                            <label for="sartho849" class="form-check-label">কোর্ট অফ ওয়ার্ডস
+                                            </label>
+                                        </div>
+                                        <div class="bs_checkbox"><input type="checkbox" id="sartho8410"
+                                                class="form-check-input ownership_reference_check"
+                                                value="সরকারি সংস্থা">
+                                            <label for="sartho8410" class="form-check-label">সরকারি সংস্থা</label>
+                                        </div>
+                                        <div class="bs_checkbox"><input type="checkbox" id="sartho8411"
+                                                class="form-check-input ownership_reference_check" value="অন্যান্য">
+                                            <label for="sartho8411" class="form-check-label">অন্যান্য</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                                placeholder="ব্যাখ্যা করুন" spellcheck="false"></textarea>
+                                        </div>
                                     </div>
-                                    <div class="bs_checkbox"><input type="checkbox" id="sartho842"
-                                            class="form-check-input ownership_reference_check" value="অর্পিত">
-                                        <label for="sartho842" class="form-check-label">অর্পিত</label>
-                                    </div>
-                                    <div class="bs_checkbox"><input type="checkbox" id="sartho843"
-                                            class="form-check-input ownership_reference_check" value="পরিত্যক্ত">
-                                        <label for="sartho843" class="form-check-label">পরিত্যক্ত</label>
-                                    </div>
-                                    <div class="bs_checkbox"><input type="checkbox" id="sartho844"
-                                            class="form-check-input ownership_reference_check" value="ওয়াকফ">
-                                        <label for="sartho844" class="form-check-label">ওয়াকফ</label>
-                                    </div>
-                                    <div class="bs_checkbox"><input type="checkbox" id="sartho845"
-                                            class="form-check-input ownership_reference_check" value="বিনিময়">
-                                        <label for="sartho845" class="form-check-label">বিনিময়
-                                        </label>
-                                    </div>
-                                    <div class="bs_checkbox"><input type="checkbox" id="sartho846"
-                                            class="form-check-input ownership_reference_check" value="দেবত্তর">
-                                        <label for="sartho846" class="form-check-label">দেবত্তর</label>
-                                    </div>
-                                    <div class="bs_checkbox"><input type="checkbox" id="sartho847"
-                                            class="form-check-input ownership_reference_check" value="অধিগ্রহণকৃত">
-                                        <label for="sartho847" class="form-check-label">অধিগ্রহণকৃত</label>
-                                    </div>
-                                    <div class="bs_checkbox"><input type="checkbox" id="sartho848"
-                                            class="form-check-input ownership_reference_check" value="খাসমহাল">
-                                        <label for="sartho848" class="form-check-label">খাসমহাল</label>
-                                    </div>
-                                    <div class="bs_checkbox"><input type="checkbox" id="sartho849"
-                                            class="form-check-input ownership_reference_check"
-                                            value="কোর্ট অফ ওয়ার্ডস">
-                                        <label for="sartho849" class="form-check-label">কোর্ট অফ ওয়ার্ডস
-                                        </label>
-                                    </div>
-                                    <div class="bs_checkbox"><input type="checkbox" id="sartho8410"
-                                            class="form-check-input ownership_reference_check" value="সরকারি সংস্থা">
-                                        <label for="sartho8410" class="form-check-label">সরকারি সংস্থা</label>
-                                    </div>
-                                    <div class="bs_checkbox"><input type="checkbox" id="sartho8411"
-                                            class="form-check-input ownership_reference_check" value="অন্যান্য">
-                                        <label for="sartho8411" class="form-check-label">অন্যান্য</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                            placeholder="ব্যাখ্যা করুন" spellcheck="false"></textarea>
-                                    </div>
-                                </div>
+                                </template>
                             </div>
                             <!-- end ৮.৪ -->
                             <!-- start ৮.৫ -->
@@ -270,7 +286,7 @@
                             </div>
                             <!-- end ৮.৫ -->
                             <!-- start ৮.৬ -->
-                            <div>
+                            <div x-data="{isShow: false}">
                                 <div class="header">
                                     <h6 class="mb-1"><span class="mr-2">৮.৬</span>গ্রহীতাদের এই মৌজায় বর্তমানে কোনো
                                         খতিয়ান আছে কিনা?</h6>
@@ -278,15 +294,25 @@
                                 <div>
                                     <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio"
                                             id="ghoshona_record861" value="1" class="form-check-input  required_field"
-                                            name="yes_no86"> <label for="ghoshona_record861"
+                                            name="yes_no86" @click="isShow=true"> <label for="ghoshona_record861"
                                             class="form-check-label">হ্যাঁ</label>
                                     </div>
                                     <div class="bs_radio border rounded py-1 px-2 mr-2"><input type="radio"
                                             id="ghoshona_record862" value="1" class="form-check-input required_field"
-                                            name="yes_no86"> <label for="ghoshona_record862"
+                                            name="yes_no86" @click="isShow=false"> <label for="ghoshona_record862"
                                             class="form-check-label">না</label>
                                     </div>
                                 </div>
+
+                                <!-- for yes -->
+                                <template x-if="isShow">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 mb-3"><input type="text"
+                                                placeholder="খতিয়ান নম্বর এন্ট্রি করুন"
+                                                class="form-control form-control-lg">
+                                        </div>
+                                    </div>
+                                </template>
                             </div>
                             <!-- end ৮.৬ -->
                             <!-- start ৮.৭ -->
@@ -304,13 +330,6 @@
                                             id="ghoshona_record872" value="1" class="form-check-input required_field"
                                             name="yes_no87"> <label for="ghoshona_record872"
                                             class="form-check-label">না</label>
-                                    </div>
-                                </div>
-                                <!-- for yes -->
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-6 mb-3"><input type="text"
-                                            placeholder="খতিয়ান নম্বর এন্ট্রি করুন"
-                                            class="form-control form-control-lg">
                                     </div>
                                 </div>
                             </div>
