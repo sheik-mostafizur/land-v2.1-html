@@ -1,0 +1,6 @@
+.mutation-form .bs_radio:has([type="radio"]:checked) {
+  background-color: #00684d;
+}
+.mutation-form .bs_radio [type="radio"]:checked + label {
+  color: white;
+}
