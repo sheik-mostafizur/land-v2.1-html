@@ -19,6 +19,11 @@
   font-family: "Kalpurush", sans-serif !important;
 }
 
+/* font change of navbar */
+.page-menu .lmt-page-menu .navbar ul li a {
+  font-family: "Kalpurush", sans-serif !important;
+}
+
 .ministry-main p {
   font-family: "Kalpurush" !important;
 }
