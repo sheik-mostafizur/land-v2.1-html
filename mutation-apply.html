@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="./css/ministry-apply.css">
     <link rel="stylesheet" href="./css/mutation-apply.css">
 
+    <!-- include alpinejs -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 </head>
 
 <body>
@@ -54,26 +57,25 @@
 
             <div class="container">
                 <div class="ministry-form mutation-form">
-                    <div class="mf-component">
+                    <div class="mf-component" x-data="{feesPayed: false, feesPay: false}">
                         <div class="body">
-                            <div class="alert alert-warning" role="alert">
+                            <div class="alert alert-warning text-black" role="alert">
                                 মিউটেশন ফরম পুরন করার পূর্বে ২০ টাকা কোর্ট ফি পরিশোধ করতে হবে।
 
                             </div>
-                            <div class="mt-4 mb-3 ">
-                                <div class="court-fees-radio">
-                                    <input name="radio" id="radio1" type="radio">
+                            <div>
+                                <div class="court-fees-radio mr-3">
+                                    <input name="radio" id="radio1" type="radio" @click="feesPayed=true; feesPay=false">
                                     <label for="radio1">ইতোমধ্যে
                                         কোর্ট ফি ২০ টাকা পরিশোধিত</label>
                                 </div>
                                 <div class="court-fees-radio">
-                                    <input name="radio" id="radio2" type="radio">
-                                    <label for="radio2">ইতোমধ্যে
-                                        কোর্ট ফি ২০ টাকা পরিশোধিত
+                                    <input name="radio" id="radio2" type="radio" @click="feesPay=true; feesPayed=false">
+                                    <label for="radio2">কোর্ট ফি ২০ টাকা পরিশোধ করতে চাই
                                     </label>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row mt-2" x-show="feesPayed">
                                 <div class="col-md-6">
                                     <label>ট্র্যাকিং নাম্বার</label>
                                     <input type="text" placeholder="ট্র্যাকিং নাম্বার"
@@ -85,7 +87,7 @@
                                         class="form-control form-control-lg">
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row mt-2" x-show="feesPay">
                                 <div class="col-lg-4 col-md-6 mb-3">
                                     <label>নাম<span class="required ml-2">*</span></label>
                                     <input type="text" placeholder="নাম" class="form-control form-control-lg">
@@ -131,7 +133,8 @@
                                     <input type="text" placeholder="ঠিকানা" class="form-control form-control-lg">
                                 </div>
                                 <div class="col-12">
-                                    <p class="required">* আপনি যে উপজেলায় নামজারী আবেদন করেতে চাচ্ছেন তাহা সিলেক্ট করুন।
+                                    <p class="required mb-0">* আপনি যে উপজেলায় নামজারী আবেদন করেতে চাচ্ছেন তাহা সিলেক্ট
+                                        করুন।
                                     </p>
                                 </div>
                             </div>
