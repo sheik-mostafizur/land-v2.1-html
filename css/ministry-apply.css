@@ -19,11 +19,6 @@
   font-family: "Kalpurush", sans-serif !important;
 }
 
-/* font change of navbar */
-.page-menu .lmt-page-menu .navbar ul li a {
-  font-family: "Kalpurush", sans-serif !important;
-}
-
 .ministry-main p {
   font-family: "Kalpurush" !important;
 }
@@ -57,6 +52,14 @@
 .btn-blue-green:hover {
   background-color: #138697;
   color: white;
+}
+
+/* font change of navbar */
+.page-menu .lmt-page-menu .navbar ul li a {
+  font-family: "Kalpurush", sans-serif !important;
+}
+.page-menu .lmt-page-menu .navbar ul li a i {
+  scale: 0.7;
 }
 
 /* ministry-modal */
@@ -112,6 +115,7 @@
 .ministry-form .mf-component .header h6 {
   font-family: "Kalpurush" !important;
   margin-bottom: 20px;
+  color: #000000;
 }
 .ministry-form .mf-component .header h6 span {
   height: 30px;
