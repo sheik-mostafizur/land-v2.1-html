@@ -143,5 +143,37 @@
 
 /* mutation-payment */
 .mutation-main .mutation-payment {
-  background-color: #c5ecd4 !important;
+  background-color: #c5ecd4;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+  padding: 20px 1px 1px 1px;
+  /* margin-bottom: 14px; */
+}
+.mutation-main .mutation-payment > div {
+  padding: 23px 22px 23px 22px;
+  border-radius: 0px 0px 6px 6px;
+}
+.mutation-main .mutation-payment > p strong {
+  padding: 14px;
+}
+
+.mutation-main .mutation-payment .payment-methods .left {
+  background-color: #eaf6ec;
+  border: 1px solid #82cc93;
+  padding: 23px 15px;
+}
+.mutation-main .mutation-payment .payment-methods .left p {
+  margin-bottom: 10px;
+}
+.mutation-main .mutation-payment .payment-methods .left p.light-50 {
+  color: #666666;
+}
+.mutation-main .mutation-payment .payment-methods .right .card {
+  padding: 10px;
+  text-align: center;
+}
+.mutation-main .mutation-payment .payment-methods .right p {
+  color: #00684d;
+  margin-bottom: 0;
+  font-weight: bold;
 }
