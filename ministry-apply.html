@@ -78,16 +78,16 @@
                         <div class="header">
                             <h6 class="mr-3"><span class="active">১</span>আপনি কোন ধরণের মিউটেশন আবেদন করবেন?</h6>
                             <div>
-                                <div class="bs_checkbox border px-2 py-1 rounded mr-2"><input type="checkbox"
-                                        id="c-one-1" class="form-check-input ownership_reference_check" value="c-one-1">
+                                <div class="bs_checkbox border"><input type="checkbox" id="c-one-1"
+                                        class="form-check-input ownership_reference_check" value="c-one-1">
                                     <label for="c-one-1" class="form-check-label">নামজারি</label>
                                 </div>
-                                <div class="bs_checkbox border px-2 py-1 rounded mr-2"><input type="checkbox"
-                                        id="c-one-2" class="form-check-input ownership_reference_check" value="c-one-2">
+                                <div class="bs_checkbox border"><input type="checkbox" id="c-one-2"
+                                        class="form-check-input ownership_reference_check" value="c-one-2">
                                     <label for="c-one-2" class="form-check-label">জমা খারিজ </label>
                                 </div>
-                                <div class="bs_checkbox border px-2 py-1 rounded mr-2"><input type="checkbox"
-                                        id="c-one-3" class="form-check-input ownership_reference_check" value="c-one-3">
+                                <div class="bs_checkbox border"><input type="checkbox" id="c-one-3"
+                                        class="form-check-input ownership_reference_check" value="c-one-3">
                                     <label for="c-one-3" class="form-check-label">জমা একত্রীকরণ </label>
                                 </div>
                             </div>
@@ -154,7 +154,7 @@
                     <!-- end component one -->
 
                     <!-- start component two -->
-                    <div class="mf-component">
+                    <div class="mf-component two">
                         <div class="header">
                             <h6><span class="active">২</span>যে সূত্রে মিউটেশন আবেদন করবেন সেটা নির্বাচন করুনঃ</h6>
                         </div>
@@ -942,7 +942,7 @@
 
                             </div>
                             <div class="row border pt-3 mt-3 position-relative">
-                                <button type="button" class="btn landinfoCloseBtn btn-danger btn-sm m-1"><i
+                                <button type="button" class="btn btn-close-top-right btn-danger btn-sm m-1"><i
                                         class="fa fa-times"></i></button>
 
                                 <div class="col-lg-4 col-md-6 mb-4"><label>দলিল ১ </label> <select
@@ -1234,8 +1234,15 @@
                                                         </div>
                                                     </div>
                                                     <div class="mb-3">
-                                                        <p class="mb-2">আবেদিত তফসিলটি রাজউক, জাতীয় গৃহায়ন কর্তৃপক্ষসহ
-                                                            বিভিন্ন সরকারি হাউজিং প্রকল্প এলাকায় কিনা?</p>
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <p class="mb-2">আবেদিত তফসিলটি রাজউক, জাতীয় গৃহায়ন
+                                                                কর্তৃপক্ষসহ
+                                                                বিভিন্ন সরকারি হাউজিং প্রকল্প এলাকায় কিনা?</p>
+                                                            <button type="button"
+                                                                class="btn btn-blue-green m-icon-left whitespace-nowrap"><i
+                                                                    class="fa fa-plus-circle"></i>আরো সংযুক্ত
+                                                                করুন</button>
+                                                        </div>
                                                         <div class="bs_radio border rounded py-1 px-2 mr-2 mr-2"><input
                                                                 type="radio" id="is_record_flow1" value="1"
                                                                 class="form-check-input  required_field"
@@ -1253,6 +1260,72 @@
                                                         <div
                                                             class="card-header d-flex align-items-center justify-content-between">
                                                             <span>০১</span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-6 mb-4"><label>প্রকল্পের
+                                                                        নাম</label>
+                                                                    <input type="text" placeholder="লিখুন"
+                                                                        class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 mb-4"><label>ব্লক
+                                                                        নম্বর</label>
+                                                                    <input type="text" placeholder="লিখুন"
+                                                                        class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 mb-4"><label>রোড
+                                                                        নম্বর</label>
+                                                                    <input type="text" placeholder="লিখুন"
+                                                                        class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 mb-4"><label>প্লট নম্বর/
+                                                                        বাড়ি নম্বর</label>
+                                                                    <input type="text" placeholder="লিখুন"
+                                                                        class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 mb-4"><label>ফ্লোর ও
+                                                                        ফ্লাটের তথ্য</label>
+                                                                    <input type="text" placeholder="লিখুন"
+                                                                        class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 mb-4">
+                                                                    <label>ঠিকানা</label>
+                                                                    <input type="text" placeholder="লিখুন"
+                                                                        class="form-control form-control-lg">
+                                                                </div>
+                                                                <div class="col-lg-6 col-xl-5 col-md-12 mb-4 file-add">
+                                                                    <label>হস্তান্তর করার অনুমোদনপত্র সংযুক্ত
+                                                                        করুন</label>
+                                                                    <div class="input-group border p-1 rounded">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text"
+                                                                                id="inputGroupFileAddon01"> <img
+                                                                                    src="./images/menu-icon-songjukti-white.svg"
+                                                                                    alt="">
+                                                                                <span class="pl-2"
+                                                                                    style="font-family: Roboto !important;">Select
+                                                                                    file</span></span>
+                                                                        </div>
+                                                                        <div class="custom-file">
+                                                                            <input type="file" class="custom-file-input"
+                                                                                id="inputGroupFile01"
+                                                                                aria-describedby="inputGroupFileAddon01">
+                                                                            <label class="custom-file-label"
+                                                                                for="inputGroupFile01">অনুমোদনপত্র
+                                                                                সংযুক্ত করুন</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card mb-3">
+                                                        <button type="button"
+                                                            class="btn btn-danger btn-sm m-1 btn-close-top-right"><i
+                                                                class="fa fa-times"></i></button>
+                                                        <div
+                                                            class="card-header d-flex align-items-center justify-content-between">
+                                                            <span>০২</span>
                                                         </div>
                                                         <div class="card-body">
                                                             <div class="row">
@@ -1441,7 +1514,7 @@
 
                             </div>
                             <div class="row border pt-3 mt-3 position-relative">
-                                <button type="button" class="btn landinfoCloseBtn btn-danger btn-sm m-1"><i
+                                <button type="button" class="btn btn-close-top-right btn-danger btn-sm m-1"><i
                                         class="fa fa-times"></i></button>
 
                                 <div class="col-lg-4 col-md-6 mb-4"><label>দলিল ১ </label> <select

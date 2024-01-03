@@ -158,6 +158,10 @@ button.one-info {
   margin-left: 1rem;
   list-style-type: disc !important;
 }
+.ministry-form .mf-component.two .bs_checkbox:hover {
+  color: #0db14b;
+  transition: 300ms;
+}
 
 .ministry-form .mf-component.three-four .yes .grohita {
   background-color: #f8f9f8;
