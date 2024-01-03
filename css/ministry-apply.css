@@ -96,12 +96,46 @@
 }
 
 .ministry-form .mf-component .file-add .input-group-prepend span {
-  background-color: #0db14b;
+  background-color: #28a745;
   color: white;
 }
-.ministry-form .mf-component .file-add label::after {
-  content: "";
-  padding: 0;
+.ministry-form .mf-component .file-add label.custom-file-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 8rem;
+  border-color: white;
+}
+.ministry-form .mf-component .file-add label.custom-file-label::before {
+  content: "Select File";
+  width: 115px;
+  height: 100%;
+  display: block;
+  background: #28a745;
+  color: white;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  padding-top: 6px;
+  padding-left: 30px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 3px;
+}
+.ministry-form .mf-component .file-add label.custom-file-label::after {
+  content: url("../images/menu-icon-songjukti-white.svg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 8px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25rem;
 }
 
 .ministry-form .mf-component .header h6 {
