@@ -3,16 +3,45 @@
   color: #000000;
 }
 
-.court-fees-radio {
+/* mutation checkbox */
+.mutation-main .bs_checkbox [type="radio"]:not(:checked) + label:after,
+.mutation-main .bs_checkbox [type="radio"]:checked + label:after,
+.mutation-main .bs_checkbox [type="radio"]:not(:checked) + label:before,
+.mutation-main .bs_checkbox [type="radio"]:checked + label:before,
+.mutation-main .bs_checkbox [type="checkbox"]:not(:checked) + label:after,
+.mutation-main .bs_checkbox [type="checkbox"]:checked + label:after,
+.mutation-main .bs_checkbox [type="checkbox"]:not(:checked) + label:before,
+.mutation-main .bs_checkbox [type="checkbox"]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon-checkbox-mutation.svg) no-repeat center center;
+  background-size: 100%;
+}
+
+.mutation-main .bs_checkbox [type="radio"]:not(:checked) + label:after,
+.mutation-main .bs_checkbox [type="radio"]:checked + label:after,
+.mutation-main .bs_checkbox [type="checkbox"]:not(:checked) + label:after,
+.mutation-main .bs_checkbox [type="checkbox"]:checked + label:after {
+  transition: all 0.2s;
+  background: url(../images/icon-checkbox-checked-mutation.svg) no-repeat center
+    center;
+  background-size: 100%;
+}
+
+.mutation-main .court-fees-radio {
   display: inline-block;
 }
-.court-fees-radio [type="radio"] {
+.mutation-main .court-fees-radio [type="radio"] {
   display: none;
 }
-.court-fees-radio + .court-fees-radio {
+.mutation-main .court-fees-radio + .mutation-main .court-fees-radio {
   margin-top: 15px;
 }
-.court-fees-radio label {
+.mutation-main .court-fees-radio label {
   display: inline-block;
   padding: 9px 10px 3px 45px;
   background: #ffffff;
@@ -24,19 +53,19 @@
   white-space: nowrap;
   position: relative;
 }
-.court-fees-radio label:after,
-.court-fees-radio label:before {
+.mutation-main .court-fees-radio label:after,
+.mutation-main .court-fees-radio label:before {
   content: "";
   position: absolute;
   border-radius: 50%;
 }
-.court-fees-radio label:after {
+.mutation-main .court-fees-radio label:after {
   height: 20px;
   width: 20px;
   border: 1px solid #858c94;
   left: 10px;
 }
-.court-fees-radio label:before {
+.mutation-main .court-fees-radio label:before {
   background: #ffffff;
   height: 10px;
   width: 10px;
@@ -47,43 +76,56 @@
   visibility: hidden;
   transition: 0.3s ease-in-out 0s;
 }
-.court-fees-radio [type="radio"]:checked ~ label {
+.mutation-main .court-fees-radio [type="radio"]:checked ~ label {
   border-color: #00684d;
   background-color: #00684d;
   color: white;
 }
-.court-fees-radio [type="radio"]:checked ~ label::before {
+.mutation-main .court-fees-radio [type="radio"]:checked ~ label::before {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
 }
-.court-fees-radio [type="radio"]:checked ~ label::after {
+.mutation-main .court-fees-radio [type="radio"]:checked ~ label::after {
   border-color: white;
 }
 
 /* font change of navbar */
-.mutation-menu.page-menu .lmt-page-menu .navbar ul {
+.mutation-main .mutation-menu.page-menu .lmt-page-menu .navbar ul {
   border-radius: 0 !important;
 }
-.mutation-menu.page-menu .lmt-page-menu .navbar ul li.active a:after {
+.mutation-main
+  .mutation-menu.page-menu
+  .lmt-page-menu
+  .navbar
+  ul
+  li.active
+  a:after {
   left: 45%;
 }
 
-.mutation-menu.page-menu .lmt-page-menu .navbar ul li a {
+.mutation-main .mutation-menu.page-menu .lmt-page-menu .navbar ul li a {
   font-family: "Kalpurush", sans-serif !important;
   border-radius: 0 !important;
   padding: 10px 20px 10px 50px;
 }
 
-.mutation-menu.page-menu .lmt-page-menu .navbar ul li a i {
+.mutation-main .mutation-menu.page-menu .lmt-page-menu .navbar ul li a i {
   scale: 0.7;
 }
 
-.mutation-menu.page-menu .lmt-page-menu .navbar ul li a .lm-icon {
+.mutation-main
+  .mutation-menu.page-menu
+  .lmt-page-menu
+  .navbar
+  ul
+  li
+  a
+  .lm-icon {
   left: 10px;
 }
 
 /* mutation-payment */
-.mutation-payment {
+.mutation-main .mutation-payment {
   background-color: #c5ecd4 !important;
 }
