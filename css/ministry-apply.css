@@ -218,6 +218,7 @@ button.one-info {
 
 .ministry-bottom-menu button {
   margin: 0.5rem;
+  font-size: 13px;
 }
 .ministry-bottom-menu button.light {
   background-color: #ebecef;
