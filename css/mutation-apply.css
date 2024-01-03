@@ -61,6 +61,28 @@
   border-color: white;
 }
 
+/* font change of navbar */
+.mutation-menu.page-menu .lmt-page-menu .navbar ul {
+  border-radius: 0 !important;
+}
+.mutation-menu.page-menu .lmt-page-menu .navbar ul li.active a:after {
+  left: 45%;
+}
+
+.mutation-menu.page-menu .lmt-page-menu .navbar ul li a {
+  font-family: "Kalpurush", sans-serif !important;
+  border-radius: 0 !important;
+  padding: 10px 20px 10px 50px;
+}
+
+.mutation-menu.page-menu .lmt-page-menu .navbar ul li a i {
+  scale: 0.7;
+}
+
+.mutation-menu.page-menu .lmt-page-menu .navbar ul li a .lm-icon {
+  left: 10px;
+}
+
 /* mutation-payment */
 .mutation-payment {
   background-color: #c5ecd4 !important;

@@ -54,14 +54,6 @@
   color: white;
 }
 
-/* font change of navbar */
-.page-menu .lmt-page-menu .navbar ul li a {
-  font-family: "Kalpurush", sans-serif !important;
-}
-.page-menu .lmt-page-menu .navbar ul li a i {
-  scale: 0.7;
-}
-
 /* ministry-modal */
 
 .ministry-main .modal .modal-dialog .btn,
