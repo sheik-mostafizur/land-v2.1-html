@@ -141,30 +141,45 @@
   left: 10px;
 }
 
-/* mutation-payment */
-.mutation-main .mutation-payment .mutation-modal .mutation-modal-item {
+/* mutation-payment and mutation-khosra */
+.mutation-main .mutation-khosra {
+  padding: 44px 40px;
+  border-radius: 6px;
+  border-top: 1px solid #b4e7c7;
+  background: #fff;
+  box-shadow: 0px 4px 6px 0px rgba(94, 73, 155, 0.04);
+}
+
+.mutation-main .mutation-payment .mutation-modal .mutation-modal-item,
+.mutation-main .mutation-khosra .mutation-modal-item {
   background-color: #c5ecd4;
   border-radius: 6px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
   padding: 1px;
   margin-bottom: 23px;
 }
-.mutation-main .mutation-payment .mutation-modal .mutation-modal-item > div {
+.mutation-main .mutation-payment .mutation-modal .mutation-modal-item > div,
+.mutation-main .mutation-khosra .mutation-modal-item > div {
   padding: 23px 22px;
 }
-.mutation-main .mutation-payment .mutation-modal .mutation-modal-item > h6 {
+.mutation-main .mutation-payment .mutation-modal .mutation-modal-item > h6,
+.mutation-main .mutation-khosra .mutation-modal-item > h6 {
   margin: 14px 13px;
   font-weight: bold;
   font-size: 18px;
 }
-.mutation-main .mutation-payment .mutation-modal .mutation-modal-item h6 {
+.mutation-main .mutation-payment .mutation-modal .mutation-modal-item h6,
+.mutation-main .mutation-khosra .mutation-modal-item h6 {
   font-size: 18px;
+  font-family: "Kalpurush" !important;
 }
-.mutation-main .mutation-payment .mutation-modal .mutation-modal-item * p {
+.mutation-main .mutation-payment .mutation-modal .mutation-modal-item * p,
+.mutation-main .mutation-khosra .mutation-modal-item * p {
   margin-bottom: 10px;
 }
 
-.mutation-main .mutation-payment .mutation-modal .mutation-modal-item .card {
+.mutation-main .mutation-payment .mutation-modal .mutation-modal-item .card,
+.mutation-main .mutation-khosra .mutation-modal-item .card {
   background-color: #fbfbfb;
 }
 .mutation-main
@@ -172,7 +187,8 @@
   .mutation-modal
   .mutation-modal-item
   .card
-  .card-body {
+  .card-body,
+.mutation-main .mutation-khosra .mutation-modal-item .card .card-body {
   padding: 22px 13px;
 }
 .mutation-main
@@ -180,11 +196,13 @@
   .mutation-modal
   .mutation-modal-item
   .card
-  img.nid_logo {
+  img.nid_logo,
+.mutation-main .mutation-khosra .mutation-modal-item .card img.nid_logo {
   width: 26px;
   height: 26px;
 }
 
+/* .payment-methods */
 .mutation-main .mutation-payment {
   background-color: #c5ecd4;
   border-radius: 6px;
