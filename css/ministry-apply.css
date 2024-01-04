@@ -234,9 +234,7 @@ button.one-info {
 .ministry-form table tbody tr td {
   background-color: #fcfcfc;
 }
-.ministry-form table thead tr th {
-  white-space: nowrap !important;
-}
+.ministry-form table thead tr th,
 .ministry-form table tbody tr td {
   white-space: nowrap !important;
 }
