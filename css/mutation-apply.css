@@ -191,6 +191,10 @@
 .mutation-main .mutation-khosra .mutation-modal-item .card .card-body {
   padding: 22px 13px;
 }
+.mutation-main .mutation-payment .mutation-modal .mutation-modal-item table td,
+.mutation-main .mutation-khosra .mutation-modal-item table td {
+  vertical-align: middle;
+}
 .mutation-main
   .mutation-payment
   .mutation-modal
