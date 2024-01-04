@@ -142,12 +142,54 @@
 }
 
 /* mutation-payment */
+.mutation-main .mutation-payment .mutation-modal .mutation-modal-item {
+  background-color: #c5ecd4;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+  padding: 1px;
+  margin-bottom: 23px;
+}
+.mutation-main .mutation-payment .mutation-modal .mutation-modal-item > div {
+  padding: 23px 22px;
+}
+.mutation-main .mutation-payment .mutation-modal .mutation-modal-item > h6 {
+  margin: 14px 13px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.mutation-main .mutation-payment .mutation-modal .mutation-modal-item h6 {
+  font-size: 18px;
+}
+.mutation-main .mutation-payment .mutation-modal .mutation-modal-item * p {
+  margin-bottom: 10px;
+}
+
+.mutation-main .mutation-payment .mutation-modal .mutation-modal-item .card {
+  background-color: #fbfbfb;
+}
+.mutation-main
+  .mutation-payment
+  .mutation-modal
+  .mutation-modal-item
+  .card
+  .card-body {
+  padding: 22px 13px;
+}
+.mutation-main
+  .mutation-payment
+  .mutation-modal
+  .mutation-modal-item
+  .card
+  img.nid_logo {
+  width: 26px;
+  height: 26px;
+}
+
 .mutation-main .mutation-payment {
   background-color: #c5ecd4;
   border-radius: 6px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
   padding: 20px 1px 1px 1px;
-  /* margin-bottom: 14px; */
 }
 .mutation-main .mutation-payment > div {
   padding: 23px 22px 23px 22px;
