@@ -212,7 +212,7 @@
   display: grid;
   grid-template-columns: 370px 370px;
   justify-content: space-between;
-  margin: 0 10px;
+  margin-bottom: 10px;
 }
 
 .mutation-main .mutation-modal-item .jomir-tottho > div {
