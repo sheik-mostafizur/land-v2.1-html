@@ -207,6 +207,30 @@
   height: 26px;
 }
 
+/* ৩) জমির তথ্য  */
+.mutation-main .mutation-modal-item .jomir-tottho {
+  display: grid;
+  grid-template-columns: 370px 370px;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.mutation-main .mutation-modal-item .jomir-tottho > div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.mutation-main .mutation-modal-item .jomir-tottho p {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+  .mutation-main .mutation-modal-item .jomir-tottho {
+    grid-template-columns: auto;
+    justify-content: normal;
+  }
+}
+
 /* .payment-methods */
 .mutation-main .mutation-payment {
   background-color: #c5ecd4;
