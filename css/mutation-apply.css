@@ -5,6 +5,11 @@
   color: #000000;
 }
 
+/* mutation label */
+.mutation-main label {
+  color: #09101d;
+}
+
 /* mutation checkbox */
 .mutation-main .bs_checkbox [type="radio"]:not(:checked) + label:after,
 .mutation-main .bs_checkbox [type="radio"]:checked + label:after,
