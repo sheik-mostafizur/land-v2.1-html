@@ -20,6 +20,8 @@
 
     <link rel="stylesheet" href="./css/ministry-apply.css">
     <link rel="stylesheet" href="./css/mutation-apply.css">
+    <!-- include alpinejs -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 </head>
 
@@ -251,17 +253,20 @@
                                         কাছে চাহিত কাগজ সঠিকভাবে ও নির্ধারিত সময়ে উপস্থিত না হলে অথবা সময়মত খতিয়ান ও
                                         রেকর্ড সংশোধন ফি পরিশোধ না করলে আবেদনটি বাতিল বলে গণ্য হবে)
                                     </div>
-                                    <div>
+                                    <!-- dynamic file name change -->
+                                    <div x-data="{ fileName: 'ডকুমেন্ট সংযুক্ত' }">
                                         <p class="my-3">প্রতিনিধিত্ব করার ক্ষমতার্পন (Authorization letter) ডকুমেন্ট
                                             সংযুক্ত করুন।
                                             <img class="pl-2" src="./images/icon-pdf.svg" alt="">
                                         </p>
                                         <label for="document_sonjukto_koren"
                                             class="btn active btn-outline-success m-icon-left"> <i
-                                                class="fa fa-plus-circle" aria-hidden="true"></i> ডকুমেন্ট সংযুক্ত
-                                            করুন<input type="file" id="document_sonjukto_koren" hidden></label>
+                                                class="fa fa-plus-circle" aria-hidden="true"></i><span x-text="fileName"
+                                                class="font-kalpurush"></span><input type="file"
+                                                id="document_sonjukto_koren" hidden
+                                                x-on:change="fileName = $event.target.files[0] ? $event.target.files[0].name : 'ডকুমেন্ট সংযুক্ত করুন'"></label>
                                     </div>
-
+                                    <!-- dynamic file name change -->
                                     <div>
                                         <p class="my-3">যোগাযোগ/ ওটিপি/ SMS পাঠানোর জন্য মোবাইল নম্বর। <img class="mb-1"
                                                 src="./images/icon-info.svg" alt=""></p>
@@ -392,16 +397,20 @@
                                         <option value=""></option>
                                     </select>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4 file-add"><label>স্বাক্ষর সংযুক্ত করুন</label>
+                                <!-- dynamic file name change -->
+                                <div class="col-lg-4 col-md-6 mb-4 file-add" x-data="{ fileName: 'স্বাক্ষর সংযুক্ত' }">
+                                    <label>স্বাক্ষর সংযুক্ত করুন</label>
                                     <div class="input-group border p-1 rounded">
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                                aria-describedby="inputGroupFileAddon01">
-                                            <label class="custom-file-label" for="inputGroupFile01">স্বাক্ষর সংযুক্ত
-                                                করুন</label>
+                                                aria-describedby="inputGroupFileAddon01"
+                                                x-on:change="fileName = $event.target.files[0] ? $event.target.files[0].name : '                                                করুন'">
+                                            <label class="custom-file-label" for="inputGroupFile01"
+                                                x-text="fileName"></label>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- dynamic file name change -->
                             </div>
                         </div>
                         <!-- end অধিগ্রহণ 3.1 ৩.১ -->
