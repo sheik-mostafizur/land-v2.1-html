@@ -9,6 +9,9 @@
 .mutation-main label {
   color: #09101d;
 }
+.mutation-main .file-add .custom-file label {
+  color: #76858b;
+}
 
 /* mutation checkbox */
 .mutation-main .bs_checkbox [type="radio"]:not(:checked) + label:after,
