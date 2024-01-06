@@ -1,4 +1,6 @@
 /* some utils classes */
+/** colors classes */
+
 .text-black {
   color: #000000;
 }
@@ -36,7 +38,9 @@
   border-radius: 4px;
   margin-right: 10px !important;
 }
-
+.mutation-main .alert-warning {
+  background: #fef5dc;
+}
 .mutation-main .btn-close-top-right {
   position: absolute;
   right: -8px;
