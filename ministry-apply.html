@@ -1957,9 +1957,181 @@
                                 <div class="border pt-3 px-3 bg-light" style="border-radius: 10px;">
                                     <div>
                                         <div class="flex-grow-1 text-right mb-3">
-                                            <button type="button" class="btn active btn-outline-success m-icon-left"><i
-                                                    class="fa fa-plus-circle"></i>
-                                                ওয়ারিশের তথ্য সংযুক্ত করুন</button>
+                                                <div class="ministry-modal">
+                                                    <!-- modal button -->
+                                                    <button type="button" class="btn active btn-outline-success m-icon-left" data-toggle="modal" data-target="#mfcFiveOarish"><i class="fa fa-plus-circle"></i>ওয়ারিশের তথ্য সংযুক্ত করুন</button>
+
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="mfcFiveOarish" tabindex="-1" aria-labelledby="mfcFiveOarishLabel" style="display: none;" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title flex-grow-1 text-center" id="mfcFiveOarishLabel">আবেদনকারী / গ্রহীতা
+                                                                    </h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">×</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body text-left">
+                                                                    <div class="mb-3 d-flex align-items-center flex-wrap">
+                                                                        <div class="bs_radio border rounded py-1 px-2 mr-2 mr-2">
+                                                                            <input type="radio" id="is_record_flow1" value="1" class="form-check-input  required_field" name="th-yes-no"> <label for="is_record_flow1" class="form-check-label">প্রাপ্ত
+                                                                                বয়স্ক</label>
+                                                                        </div>
+                                                                        <div class="bs_radio border rounded py-1 px-2 mr-2 mr-2">
+                                                                            <input type="radio" id="is_record_flow2" value="1" class="form-check-input required_field" name="th-yes-no"> <label for="is_record_flow2" class="form-check-label">অপ্রাপ্ত
+                                                                                বয়স্ক</label>
+                                                                        </div>
+                                                                        <div class="bs_radio border rounded py-1 px-2 mr-2 mr-2">
+                                                                            <input type="radio" id="is_record_flow2" value="1" class="form-check-input required_field" name="th-yes-no"> <label for="is_record_flow2" class="form-check-label">প্রবাসী</label>
+                                                                        </div>
+                                                                        <div class="bs_radio border rounded py-1 px-2 mr-2 mr-2">
+                                                                            <input type="radio" id="is_record_flow2" value="1" class="form-check-input required_field" name="th-yes-no"> <label for="is_record_flow2" class="form-check-label">মুক্তিযোদ্ধা</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <p class="mb-2">আবেদনকারী / গ্রহীতা</p>
+                                                                        <div class="d-flex align-items-center flex-wrap">
+                                                                            <div class="bs_radio border rounded py-1 px-2 mr-2 mr-2">
+                                                                                <input type="radio" id="is_record_flow1" value="1" class="form-check-input  required_field" name="th-yes-no"> <label for="is_record_flow1" class="form-check-label">জাতীয়
+                                                                                    পরিচয় পত্র</label>
+                                                                            </div>
+                                                                            <div class="bs_radio border rounded py-1 px-2 mr-2 mr-2">
+                                                                                <input type="radio" id="is_record_flow2" value="1" class="form-check-input required_field" name="th-yes-no"> <label for="is_record_flow2" class="form-check-label">জন্ম
+                                                                                    নিবন্ধন</label>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-9">
+                                                                            <label for="add_document" class="add_document w-100" style="border: 1px dashed #d0d5dd;">
+                                                                                <input type="file" name="add_document" id="add_document" hidden="">
+                                                                                <div class="text-center">
+                                                                                    <svg class="my-3" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                        <g clip-path="url(#clip0_5359_69910)">
+                                                                                            <path d="M22.2246 16.5586V21.5586C22.2246 21.8238 22.1193 22.0782 21.9317 22.2657C21.7442 22.4532 21.4898 22.5586 21.2246 22.5586H3.22461C2.95939 22.5586 2.70504 22.4532 2.5175 22.2657C2.32997 22.0782 2.22461 21.8238 2.22461 21.5586V16.5586H0.224609V21.5586C0.224609 22.3542 0.54068 23.1173 1.10329 23.6799C1.6659 24.2425 2.42896 24.5586 3.22461 24.5586H21.2246C22.0203 24.5586 22.7833 24.2425 23.3459 23.6799C23.9085 23.1173 24.2246 22.3542 24.2246 21.5586V16.5586H22.2246Z" fill="#374957">
+                                                                                            </path>
+                                                                                            <path d="M12.1914 0.558605C11.7976 0.55752 11.4074 0.634162 11.0433 0.78414C10.6792 0.934118 10.3482 1.15448 10.0694 1.43261L6.15039 5.35161L7.56439 6.7656L11.1984 3.13261L11.2244 19.5586H13.2244L13.1984 3.14661L16.8174 6.7656L18.2314 5.35161L14.3124 1.43261C14.0338 1.15451 13.703 0.93416 13.339 0.784179C12.975 0.634199 12.585 0.557542 12.1914 0.558605Z" fill="#374957">
+                                                                                            </path>
+                                                                                        </g>
+                                                                                        <defs>
+                                                                                            <clipPath id="clip0_5359_69910">
+                                                                                                <rect width="24" height="24" fill="white" transform="translate(0.224609 0.558594)">
+                                                                                                </rect>
+                                                                                            </clipPath>
+                                                                                        </defs>
+                                                                                    </svg>
+                                                                                    <p class="font-roboto mb-0">
+                                                                                        <b>Photo</b>
+                                                                                        <br>
+                                                                                        Browse and chose the
+                                                                                        files <br> your from
+                                                                                        your
+                                                                                        computer
+                                                                                    </p>
+                                                                                    <svg class="my-3" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                        <rect x="0.224609" y="0.558594" width="32" height="32" rx="4" fill="#22098A">
+                                                                                        </rect>
+                                                                                        <path d="M17.0576 10.724C17.0576 10.2637 16.6845 9.89062 16.2243 9.89062C15.764 9.89062 15.391 10.2637 15.391 10.724V15.724H10.391C9.93071 15.724 9.55762 16.0971 9.55762 16.5573C9.55762 17.0175 9.93071 17.3906 10.391 17.3906H15.391V22.3906C15.391 22.8509 15.764 23.224 16.2243 23.224C16.6845 23.224 17.0576 22.8509 17.0576 22.3906V17.3906H22.0576C22.5179 17.3906 22.891 17.0175 22.891 16.5573C22.891 16.0971 22.5179 15.724 22.0576 15.724H17.0576V10.724Z" fill="white"></path>
+                                                                                    </svg>
+
+                                                                                </div>
+
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <img src="./images/proifle.png" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>জাতীয় পরিচয়পত্র</label>
+                                                                            <input type="text" placeholder="জাতীয় পরিচয়পত্র" class="form-control form-control-lg">
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>মুক্তিযোদ্ধা সনদ নং</label>
+                                                                            <input type="text" placeholder="মুক্তিযোদ্ধা সনদ নং" class="form-control form-control-lg">
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>আবেদনকারীর নাম</label>
+                                                                            <input type="text" placeholder="আবেদনকারীর নাম" class="form-control form-control-lg">
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>পিতার নাম</label>
+                                                                            <input type="text" placeholder="পিতার নাম" class="form-control form-control-lg">
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>জন্মতারিখ</label>
+                                                                            <input type="date" placeholder="জন্মতারিখ" class="form-control form-control-lg">
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>মেইল</label>
+                                                                            <input type="text" placeholder="মেইল" class="form-control form-control-lg">
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>মাতার নামঃ</label>
+                                                                            <input type="text" placeholder="মাতার নামঃ" class="form-control form-control-lg">
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>মোবাইল নম্বর</label>
+                                                                            <input type="text" placeholder="মোবাইল নম্বর" class="form-control form-control-lg">
+                                                                        </div>
+
+                                                                        <div class="col-md-4 mb-3"><label>বিভাগ
+                                                                            </label> <select class="form-control form-control-lg">
+                                                                                <option value="">নির্বাচন করুন
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-md-4 mb-3"><label>জেলা
+                                                                            </label> <select class="form-control form-control-lg">
+                                                                                <option value="">নির্বাচন করুন
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-md-4 mb-3"><label>উপজেলা
+                                                                            </label> <select class="form-control form-control-lg">
+                                                                                <option value="">নির্বাচন করুন
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-12 mb-3">
+                                                                            <label>ঠিকানা</label>
+                                                                            <input type="text" placeholder="ঠিকানা" class="form-control form-control-lg">
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>জমিতে আবেদনকারীর অংশ</label>
+                                                                            <input type="text" placeholder="জমিতে আবেদনকারীর অংশ" class="form-control form-control-lg">
+                                                                        </div>
+                                                                        <div class="offset-md-6"></div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <button type="button" class="btn btn-outline-success m-icon-left"><svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <g clip-path="url(#clip0_7800_50427)">
+                                                                                        <path d="M3.70253 3.02326L5.04359 1.68173L5.04039 8.75737C5.04039 9.0105 5.24558 9.21569 5.49871 9.21569C5.75183 9.21569 5.95703 9.0105 5.95703 8.75737L5.96023 1.68953L7.29488 3.02463C7.47696 3.20048 7.7671 3.19545 7.94295 3.01338C8.1145 2.83577 8.1145 2.55418 7.94295 2.37657L6.47127 0.903041C5.93447 0.365897 5.06389 0.365617 4.52675 0.902418C4.52653 0.902633 4.52634 0.902826 4.52612 0.903041L3.05444 2.37519C2.8786 2.55727 2.88362 2.84741 3.0657 3.02326C3.24331 3.19481 3.5249 3.19481 3.70253 3.02326Z" fill="#0DB14B"></path>
+                                                                                        <path d="M10.5415 7.83203C10.2883 7.83203 10.0831 8.03723 10.0831 8.29035V10.1237C10.0831 10.3768 9.87795 10.582 9.62483 10.582H1.37496C1.12183 10.582 0.916638 10.3768 0.916638 10.1237V8.29035C0.916638 8.03723 0.711444 7.83203 0.458319 7.83203C0.205194 7.83203 0 8.03723 0 8.29035V10.1237C0 10.883 0.615604 11.4986 1.37498 11.4986H9.62485C10.3842 11.4986 10.9998 10.883 10.9998 10.1237V8.29035C10.9998 8.03723 10.7946 7.83203 10.5415 7.83203Z" fill="#0DB14B"></path>
+                                                                                    </g>
+                                                                                    <defs>
+                                                                                        <clipPath id="clip0_7800_50427">
+                                                                                            <rect width="11" height="11" fill="white" transform="translate(0 0.5)"></rect>
+                                                                                        </clipPath>
+                                                                                    </defs>
+                                                                                </svg>
+                                                                                মুক্তিযোদ্ধা সনদের সার্টিফাইড
+                                                                                কপি সংযুক্ত করুন</button>
+                                                                        </div>
+                                                                        <div class="offset-md-6"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer justify-content-center">
+                                                                    <button type="button" class="btn btn-outline-danger mr-3" data-dismiss="modal"><i class="fa fa-times-circle"></i>
+                                                                        বাতিল</button>
+                                                                    <button type="button" class="btn btn-success m-icon-left"><i class="fa fa-save"></i>যাচা্ই</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                         </div>
                                         <div class="table-responsive">
                                             <table class="table table-bordered">
