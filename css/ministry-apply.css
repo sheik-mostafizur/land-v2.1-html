@@ -89,7 +89,7 @@
   background-color: white;
   border-radius: 6px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 18px;
 }
 .ministry-form .mf-component .input-group-prepend span {
@@ -142,7 +142,7 @@
 
 .ministry-form .mf-component .header h6 {
   font-family: "Kalpurush" !important;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #000000;
 }
 .ministry-form .mf-component .header h6 span {
