@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>.:: ভূমি মন্ত্রণালয় ::.</title>
+    <link href="images/favicon.png" type="image/x-icon" rel="icon" />
+    <link href="images/favicon.png" type="image/x-icon" rel="shortcut icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="fonts/nikosh/nikosh_fonts.css">
+    <link rel="stylesheet" href="fonts/solaiman-lipi/fonts-solaimanlipi.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css?v=20220422300">
+    <link rel="stylesheet" href="css/home-style.css?v=20230921967">
+    <link rel="stylesheet" href="css/responsive.css?v=20220422300">
+    <link rel="stylesheet" href="css/home-responsive.css?v=20230921967">
+
+    <link rel="stylesheet" href="./css/ministry-apply.css">
+    <link rel="stylesheet" href="./css/mutation-apply.css">
+
+    <!-- include alpinejs -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <style>
+        @media print {
+            .when-print-d-none {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header when-print-d-none">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-land-mutation">
+                    <a class="logo-item" href="index.html">
+                        <img src="./images/2023/home/logo-landmutation.svg" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="top-right">
+                    <a class="logo-home-icon" href="index.html">
+                        <img src="./images/2023/home/icon-home-logo.svg" alt="Logo">
+                    </a>
+                    <div class="top-date">
+                        <span class="date-bn">৭ চৈত্র ১৪২৯, মঙ্গলবার,</span>
+                        <span class="date-eng">মার্চ ২১, ২০২৩</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content font-kalpurush ministry-main mutation-main">
+        <div class="page-ghoshona pt-4 mb-2">
+            <div class="container" x-data="{ print() {
+                document.getElementById('printable_area').style.display='block'
+                document.getElementById('exampleModal').innerHTML =''
+                document.querySelector('.modal-backdrop').style.opacity='0 !important'
+                document.querySelector('.modal-backdrop').remove();
+
+                [...document.querySelectorAll('.container')].forEach(item=>{
+                    
+                    item.style.maxWidth='100%';
+                    
+                    console.log(item)})
+
+
+                window.scrollTo({ top: 0, })
+                
+
+                    window.print()
+                    window.location.reload();
+
+            }}">
+                <div class="mutation-khosra">
+                    <h3 class="text-center font-kalpurush when-print-d-none">একই খতিয়ানভুক্ত হবার জন্য
+                        মিউটেশন আবেদন
+                    </h3>
+
+
+                    <div class="modal fade when-print-d-none" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div>
+                                        <div class="mutation-modal-item">
+                                            <h6>১) বাদী / গ্রহীতার
+                                                তথ্য
+                                            </h6>
+                                            <div class="bg-white rounded-bottom">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between flex-wrap">
+                                                            <h6 class="mb-3">গ্রহীতা - ১ ) মালিকানার ধরন: ব্যক্তি
+                                                                মালিকানাধীন</h6>
+                                                            <p class="mb-3">
+                                                                <img src="./images/ec-bangladesh 1.png" alt=""
+                                                                    class="nid_logo">
+                                                                জাতীয় পরিচয়পত্র যাচাইকৃত
+                                                            </p>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-xl-2 col-lg-3 col-md-12 text-center text-lg-left">
+                                                                <img src="./images/proifle.png" alt="">
+                                                            </div>
+                                                            <div class="col-xl-4 col-lg-7 table-responsive">
+                                                                <table class="table table-borderless">
+                                                                    <tr>
+                                                                        <td class="p-2">নাম</td>
+                                                                        <td class="p-2">: জুবায়ের নাজিম</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="p-2">পিতার নাম</td>
+                                                                        <td class="p-2">: অরুন কুমার মালাকার</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="p-2">মাতার নাম</td>
+                                                                        <td class="p-2">: ০১৬৭০০০৭৪৬৭</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="p-2">জাতীয় পরিচয়পত্র</td>
+                                                                        <td class="p-2">: ৫০৯৯৭৯৮৬০৪</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="p-2">জন্ম তারিখ</td>
+                                                                        <td class="p-2">: ২০/০৬/১৯৯৩</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                            <div class="col-xl-6">
+                                                                <table>
+                                                                    <tr>
+                                                                        <td class="va-top" style="min-width:80px;">
+                                                                            ঠিকানা</td>
+                                                                        <td class="va-top">: বাসা/হোল্ডিং:৬৯/এফ,
+                                                                            গ্রাম/রাস্তা:আজিমপুর সরকারী
+                                                                            কলোনী,
+                                                                            ওয়ার্ড নং-২৬, ডাকঘর:নিউ
+                                                                            মার্কেট-১২০৫, উপজেলা:
+                                                                            লালবাগ, জেলা:
+                                                                            ঢাকা</td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mutation-modal-item">
+                                            <h6>২) আবেদন সংক্রান্ত ঘোষণা
+                                            </h6>
+                                            <div class="bg-white rounded-bottom">
+                                                <div class="table-responsive">
+                                                    <table class="table mb-0">
+                                                        <thead>
+                                                            <tr class="text-center">
+                                                                <th scope="col">নং</th>
+                                                                <th scope="col">আবেদন সংক্রান্ত ঘোষণা
+                                                                </th>
+                                                                <th scope="col">উত্তর</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-center"> ১ </td>
+                                                                <td>সর্বশেষ রেকর্ড অথবা নামজারি হতে জমির
+                                                                    মালিকানার ধারাবাহিকতা আছে কিনা?</td>
+                                                                <td class="text-center">হ্যাঁঁ</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"> ২ </td>
+                                                                <td>গ্রহীতার মালিকানা দাবী ও হিস্যা সঠিক
+                                                                    আছে কি না?</td>
+                                                                <td class="text-center">না</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"> ৩ </td>
+                                                                <td>আবেদিত জমি গ্রহীতার দখলে আছে কি না?
+                                                                </td>
+                                                                <td class="text-center">হ্যাঁঁ</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"> ৪ </td>
+                                                                <td>আবেদিত জমি আংশিক খাস/ আংশিক অর্পিত/
+                                                                    আংশিক অধিগ্রহণকৃত কি না?
+                                                                </td>
+                                                                <td class="text-center">হ্যাঁঁ</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"> ৫ </td>
+                                                                <td>আবেদিত জমিতে কোন দেওয়ানী মামলা আছে
+                                                                    কি না?
+                                                                </td>
+                                                                <td class="text-center">হ্যাঁঁ</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"> ৬ </td>
+                                                                <td>আবেদিত জমিতে সরকারি স্বার্থ আছে কি
+                                                                    না?</td>
+                                                                <td class="text-center">হ্যাঁঁ</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center"> ৭ </td>
+                                                                <td>আবেদিত জমির জোত / হোল্ডিং নম্বর এর
+                                                                    সর্বশেষ অর্থ বছরের ভূমি উন্নয়ন কর
+                                                                    পরিশোধ করা আছে কি না?</td>
+                                                                <td class="text-center">হ্যাঁঁ</td>
+                                                            </tr>
+                                                            <tr class="border-bottom">
+                                                                <td class="text-center">৮</td>
+                                                                <td>গ্রহীতাদের এই মৌজায় বর্তমানে কোনো
+                                                                    খতিয়ান আছে কিনা ?</td>
+                                                                <td class="text-center">জমি</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mutation-modal-item">
+                                            <h6>৩) জমির তথ্য</h6>
+                                            <div class="bg-white rounded-bottom">
+                                                <div class="jomir-tottho">
+                                                    <div>
+                                                        <p>বিভাগ</p>
+                                                        <p>: ঢাকা</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>জেলা</p>
+                                                        <p>: ঢাকা</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>উপজেলা</p>
+                                                        <p>: বাড্ডা</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>মৌজা</p>
+                                                        <p>: বাড্ডা (জেল নং: ২৩৪২)</p>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr class="text-center">
+                                                                <th scope="col">তফসিল</th>
+                                                                <th scope="col">হোল্ডিং নম্বর</th>
+                                                                <th scope="col">খতিয়ান নং</th>
+                                                                <th scope="col">খতিয়ানের ধরণ</th>
+                                                                <th scope="col">দাগ নং</th>
+                                                                <th scope="col">জমির পরিমাণ (একরে)</th>
+                                                                <th scope="col">তফসিলের বর্ণনা</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <!-- start item -->
+                                                            <tr class="text-center">
+                                                                <td rowspan="3" class="text-center align-middle"> ১
+                                                                </td>
+                                                                <td rowspan="2" class="align-middle">
+                                                                    ১২৩৪</td>
+                                                                <td rowspan="2" class="align-middle">
+                                                                    ১২৩৪</td>
+                                                                <td rowspan="2" class="align-middle">আর
+                                                                    এস </td>
+                                                                <td>১২৩৪</td>
+                                                                <td>২ একর</td>
+                                                                <td>জমি</td>
+                                                            </tr>
+                                                            <tr class="text-center">
+                                                                <td class="text-center">১২৩৪</td>
+                                                                <td>২ একর</td>
+                                                                <td>জমি</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="4" class="text-right">
+                                                                    দলিলে আবেদনকৃত মোট জমির পরিমান
+                                                                </td>
+                                                                <td colspan="2">৪ একর</td>
+                                                            </tr>
+                                                            <!-- end item -->
+
+                                                            <!-- start total -->
+                                                            <tr>
+                                                                <td colspan="5" class="text-right"
+                                                                    style="background-color: #F6FFF8;">
+                                                                    আবেদিত মোট জমির পরিমাণ</td>
+                                                                <td colspan="2" style="background-color: #F6FFF8;">
+                                                                    ৪ একর</td>
+                                                            </tr>
+                                                            <!-- end total -->
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered mb-0">
+                                                        <thead>
+                                                            <tr class="text-center">
+                                                                <th scope="col">সংযুক্ত কাগজপত্রের নাম
+                                                                </th>
+                                                                <th scope="col">পদক্ষেপ</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>সরকারী হাউজিং প্রকল্পের অধীনে হলে
+                                                                    অনুমতিপত্র</td>
+                                                                <td class="text-center p-2"><button type="button"
+                                                                        class="btn btn-outline-success m-icon-left font-kalpurush pt-2">
+                                                                        <i class="fa fa-eye"></i>দেখুন</button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mutation-modal-item">
+                                            <h6>সংযুক্ত কাগজপত্র
+                                            </h6>
+                                            <div class="bg-white rounded-bottom">
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered mb-0">
+                                                        <thead>
+                                                            <tr class="text-center">
+                                                                <th scope="col">নং</th>
+                                                                <th scope="col">সংযুক্ত কাগজপত্রের নাম
+                                                                </th>
+                                                                <th scope="col">পদক্ষেপ</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-center"> ১ </td>
+                                                                <td>খতিয়ানটির সকল পেজ স্ক্যান কপি</td>
+                                                                <td class="text-center p-2"><button type="button"
+                                                                        class="btn btn-outline-success m-icon-left font-kalpurush pt-2">
+                                                                        <i class="fa fa-eye"></i>দেখুন</button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-blue m-icon-left when-print-d-none"
+                                            @click="print()">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9.43294 3.30859V2.39193C9.43294 1.9057 9.23979 1.43938 8.89597 1.09556C8.55216 0.751748 8.08584 0.558594 7.59961 0.558594H4.84961C4.36338 0.558594 3.89706 0.751748 3.55325 1.09556C3.20943 1.43938 3.01628 1.9057 3.01628 2.39193V3.30859C2.40871 3.30932 1.82624 3.551 1.39663 3.98061C0.967014 4.41023 0.725337 4.9927 0.724609 5.60026L0.724609 7.89193C0.725337 8.49949 0.967014 9.08196 1.39663 9.51158C1.82624 9.94119 2.40871 10.1829 3.01628 10.1836C3.01628 10.5483 3.16114 10.898 3.419 11.1559C3.67687 11.4137 4.0266 11.5586 4.39128 11.5586H8.05794C8.42262 11.5586 8.77235 11.4137 9.03022 11.1559C9.28808 10.898 9.43294 10.5483 9.43294 10.1836C10.0405 10.1829 10.623 9.94119 11.0526 9.51158C11.4822 9.08196 11.7239 8.49949 11.7246 7.89193V5.60026C11.7239 4.9927 11.4822 4.41023 11.0526 3.98061C10.623 3.551 10.0405 3.30932 9.43294 3.30859V3.30859ZM3.93294 2.39193C3.93294 2.14881 4.02952 1.91565 4.20143 1.74375C4.37334 1.57184 4.60649 1.47526 4.84961 1.47526H7.59961C7.84273 1.47526 8.07588 1.57184 8.24779 1.74375C8.4197 1.91565 8.51628 2.14881 8.51628 2.39193V3.30859H3.93294V2.39193ZM8.51628 10.1836C8.51628 10.3052 8.46799 10.4217 8.38203 10.5077C8.29608 10.5936 8.1795 10.6419 8.05794 10.6419H4.39128C4.26972 10.6419 4.15314 10.5936 4.06719 10.5077C3.98123 10.4217 3.93294 10.3052 3.93294 10.1836V8.35026C3.93294 8.2287 3.98123 8.11212 4.06719 8.02617C4.15314 7.94022 4.26972 7.89193 4.39128 7.89193H8.05794C8.1795 7.89193 8.29608 7.94022 8.38203 8.02617C8.46799 8.11212 8.51628 8.2287 8.51628 8.35026V10.1836ZM10.8079 7.89193C10.8079 8.2566 10.6631 8.60634 10.4052 8.8642C10.1474 9.12206 9.79762 9.26693 9.43294 9.26693V8.35026C9.43294 7.98559 9.28808 7.63585 9.03022 7.37799C8.77235 7.12013 8.42262 6.97526 8.05794 6.97526H4.39128C4.0266 6.97526 3.67687 7.12013 3.419 7.37799C3.16114 7.63585 3.01628 7.98559 3.01628 8.35026V9.26693C2.6516 9.26693 2.30187 9.12206 2.044 8.8642C1.78614 8.60634 1.64128 8.2566 1.64128 7.89193V5.60026C1.64128 5.23559 1.78614 4.88585 2.044 4.62799C2.30187 4.37013 2.6516 4.22526 3.01628 4.22526H9.43294C9.79762 4.22526 10.1474 4.37013 10.4052 4.62799C10.6631 4.88585 10.8079 5.23559 10.8079 5.60026V7.89193Z"
+                                                    fill="#fff" />
+                                            </svg>
+
+                                            প্রিন্ট  </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="printable_area" style="display: none;">
+                        <div class="mutation-modal-item">
+                            <h6>১) বাদী / গ্রহীতার
+                                তথ্য xxxxxxxxxxxx
+                            </h6>
+                            <div class="bg-white rounded-bottom">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                            <h6 class="mb-3">গ্রহীতা - ১ ) মালিকানার ধরন: ব্যক্তি
+                                                মালিকানাধীন</h6>
+                                            <p class="mb-3">
+                                                <img src="./images/ec-bangladesh 1.png" alt="" class="nid_logo">
+                                                জাতীয় পরিচয়পত্র যাচাইকৃত
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-2 col-lg-3 col-md-12 text-center text-lg-left">
+                                                <img src="./images/proifle.png" alt="">
+                                            </div>
+                                            <div class="col-xl-4 col-lg-7 table-responsive">
+                                                <table class="table table-borderless">
+                                                    <tr>
+                                                        <td class="p-2">নাম</td>
+                                                        <td class="p-2">: জুবায়ের নাজিম</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-2">পিতার নাম</td>
+                                                        <td class="p-2">: অরুন কুমার মালাকার</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-2">মাতার নাম</td>
+                                                        <td class="p-2">: ০১৬৭০০০৭৪৬৭</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-2">জাতীয় পরিচয়পত্র</td>
+                                                        <td class="p-2">: ৫০৯৯৭৯৮৬০৪</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="p-2">জন্ম তারিখ</td>
+                                                        <td class="p-2">: ২০/০৬/১৯৯৩</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <table>
+                                                    <tr>
+                                                        <td class="va-top" style="min-width:80px;">
+                                                            ঠিকানা</td>
+                                                        <td class="va-top">: বাসা/হোল্ডিং:৬৯/এফ,
+                                                            গ্রাম/রাস্তা:আজিমপুর সরকারী
+                                                            কলোনী,
+                                                            ওয়ার্ড নং-২৬, ডাকঘর:নিউ
+                                                            মার্কেট-১২০৫, উপজেলা:
+                                                            লালবাগ, জেলা:
+                                                            ঢাকা</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mutation-modal-item">
+                            <h6>২) আবেদন সংক্রান্ত ঘোষণা
+                            </h6>
+                            <div class="bg-white rounded-bottom">
+                                <div class="table-responsive">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th scope="col">নং</th>
+                                                <th scope="col">আবেদন সংক্রান্ত ঘোষণা
+                                                </th>
+                                                <th scope="col">উত্তর</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center"> ১ </td>
+                                                <td>সর্বশেষ রেকর্ড অথবা নামজারি হতে জমির
+                                                    মালিকানার ধারাবাহিকতা আছে কিনা?</td>
+                                                <td class="text-center">হ্যাঁঁ</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"> ২ </td>
+                                                <td>গ্রহীতার মালিকানা দাবী ও হিস্যা সঠিক
+                                                    আছে কি না?</td>
+                                                <td class="text-center">না</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"> ৩ </td>
+                                                <td>আবেদিত জমি গ্রহীতার দখলে আছে কি না?
+                                                </td>
+                                                <td class="text-center">হ্যাঁঁ</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"> ৪ </td>
+                                                <td>আবেদিত জমি আংশিক খাস/ আংশিক অর্পিত/
+                                                    আংশিক অধিগ্রহণকৃত কি না?
+                                                </td>
+                                                <td class="text-center">হ্যাঁঁ</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"> ৫ </td>
+                                                <td>আবেদিত জমিতে কোন দেওয়ানী মামলা আছে
+                                                    কি না?
+                                                </td>
+                                                <td class="text-center">হ্যাঁঁ</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"> ৬ </td>
+                                                <td>আবেদিত জমিতে সরকারি স্বার্থ আছে কি
+                                                    না?</td>
+                                                <td class="text-center">হ্যাঁঁ</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"> ৭ </td>
+                                                <td>আবেদিত জমির জোত / হোল্ডিং নম্বর এর
+                                                    সর্বশেষ অর্থ বছরের ভূমি উন্নয়ন কর
+                                                    পরিশোধ করা আছে কি না?</td>
+                                                <td class="text-center">হ্যাঁঁ</td>
+                                            </tr>
+                                            <tr class="border-bottom">
+                                                <td class="text-center">৮</td>
+                                                <td>গ্রহীতাদের এই মৌজায় বর্তমানে কোনো
+                                                    খতিয়ান আছে কিনা ?</td>
+                                                <td class="text-center">জমি</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mutation-modal-item">
+                            <h6>৩) জমির তথ্য</h6>
+                            <div class="bg-white rounded-bottom">
+                                <div class="jomir-tottho">
+                                    <div>
+                                        <p>বিভাগ</p>
+                                        <p>: ঢাকা</p>
+                                    </div>
+                                    <div>
+                                        <p>জেলা</p>
+                                        <p>: ঢাকা</p>
+                                    </div>
+                                    <div>
+                                        <p>উপজেলা</p>
+                                        <p>: বাড্ডা</p>
+                                    </div>
+                                    <div>
+                                        <p>মৌজা</p>
+                                        <p>: বাড্ডা (জেল নং: ২৩৪২)</p>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th scope="col">তফসিল</th>
+                                                <th scope="col">হোল্ডিং নম্বর</th>
+                                                <th scope="col">খতিয়ান নং</th>
+                                                <th scope="col">খতিয়ানের ধরণ</th>
+                                                <th scope="col">দাগ নং</th>
+                                                <th scope="col">জমির পরিমাণ (একরে)</th>
+                                                <th scope="col">তফসিলের বর্ণনা</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- start item -->
+                                            <tr class="text-center">
+                                                <td rowspan="3" class="text-center align-middle"> ১
+                                                </td>
+                                                <td rowspan="2" class="align-middle">
+                                                    ১২৩৪</td>
+                                                <td rowspan="2" class="align-middle">
+                                                    ১২৩৪</td>
+                                                <td rowspan="2" class="align-middle">আর
+                                                    এস </td>
+                                                <td>১২৩৪</td>
+                                                <td>২ একর</td>
+                                                <td>জমি</td>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <td class="text-center">১২৩৪</td>
+                                                <td>২ একর</td>
+                                                <td>জমি</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4" class="text-right">
+                                                    দলিলে আবেদনকৃত মোট জমির পরিমান
+                                                </td>
+                                                <td colspan="2">৪ একর</td>
+                                            </tr>
+                                            <!-- end item -->
+
+                                            <!-- start total -->
+                                            <tr>
+                                                <td colspan="5" class="text-right" style="background-color: #F6FFF8;">
+                                                    আবেদিত মোট জমির পরিমাণ</td>
+                                                <td colspan="2" style="background-color: #F6FFF8;">
+                                                    ৪ একর</td>
+                                            </tr>
+                                            <!-- end total -->
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered mb-0">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th scope="col">সংযুক্ত কাগজপত্রের নাম
+                                                </th>
+                                                <th scope="col">পদক্ষেপ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>সরকারী হাউজিং প্রকল্পের অধীনে হলে
+                                                    অনুমতিপত্র</td>
+                                                <td class="text-center p-2"><button type="button"
+                                                        class="btn btn-outline-success m-icon-left font-kalpurush pt-2">
+                                                        <i class="fa fa-eye"></i>দেখুন</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mutation-modal-item">
+                            <h6>সংযুক্ত কাগজপত্র
+                            </h6>
+                            <div class="bg-white rounded-bottom">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered mb-0">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th scope="col">নং</th>
+                                                <th scope="col">সংযুক্ত কাগজপত্রের নাম
+                                                </th>
+                                                <th scope="col">পদক্ষেপ</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center"> ১ </td>
+                                                <td>খতিয়ানটির সকল পেজ স্ক্যান কপি</td>
+                                                <td class="text-center p-2"><button type="button"
+                                                        class="btn btn-outline-success m-icon-left font-kalpurush pt-2">
+                                                        <i class="fa fa-eye"></i>দেখুন</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container ministry-bottom-menu when-print-d-none">
+                <div class="row my-3">
+                    <div class="col text-center">
+                        <button type="button" class="btn light">
+                            <img class="mb-1" src="./images/icon-home.svg" alt="">
+                            বাতিল করুন</button>
+                        <button type="button" class="btn btn-warning m-icon-left" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <img class="mb-1" src="./images/icon-printer.svg" alt="">
+                            খসড়া ভিউ/ প্রিন্ট  </button>
+                        <button type="button" class="btn btn-blue m-icon-left">
+                            <img class="mb-1" src="./images/icon-save.svg" alt="">
+                            সংরক্ষণ </button>
+                        <button type="button" class="btn active btn-outline-success m-icon-left">
+                            সংরক্ষণ এবং পরবর্তী
+                            <img class="mb-1" src="./images/icon-right-arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="land-smart-mutation-footer when-print-d-none">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-top-sec">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-item">
+                                <div class="footer-logo-group">
+                                    <a class="footer-logo-item" href="#">
+                                        <img src="./images/2023/home/ba-footer-logo-land-white.svg" alt="Logo">
+                                    </a>
+                                    <a class="footer-logo-item" href="#">
+                                        <img src="./images/2023/home/ba-footer-logo-white.svg" alt="Logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-item">
+                                <h3 class="footer-title">নামজারি সেবা</h3>
+                                <ul class="footer-menu">
+                                    <li><a href="#">নামজারির ধাপ</a></li>
+                                    <li><a href="#">নামজারি সংক্রান্ত প্রজ্ঞাপন / বিধি</a></li>
+                                    <li><a href="#">ভূমিসেবা </a></li>
+                                    <li><a href="#">পরিসংখ্যান</a></li>
+                                    <li><a href="#">যোগাযোগ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-item">
+                                <h3 class="footer-title">অন্যান্য</h3>
+                                <ul class="footer-menu">
+                                    <li><a href="#">শর্তাবলী</a></li>
+                                    <li><a href="#">কর্মকর্তাবৃন্দের তালিকা</a></li>
+                                    <li><a href="#">জিজ্ঞাসা </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-item">
+                                <h3 class="footer-title">গুরুত্বপুর্ণ লিংকসমূহ</h3>
+                                <ul class="footer-menu">
+                                    <li><a href="#">ভূমি মন্ত্রণালয়</a></li>
+                                    <li><a href="#">ভূমি পোর্টাল</a></li>
+                                    <li><a href="#">ভূমি উন্নয়ন কর</a></li>
+                                    <li><a href="#">ই-পর্চা</a></li>
+                                    <li><a href="#">বাংলাদেশ নির্বাচন কমিশন</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom-sec">
+                    <div class="footer-app-logo">
+                        <a class="app-icon" href="mobile-app.html">
+                            <img src="./images/2023/home/mutation-app-logo.svg" height="40" alt="Mutaion App">
+                        </a>
+                    </div>
+                    <p>ভূমি মন্ত্রনালয়ের অধীনে মিউটেশনের সকল তথ্য পেতে নামজারি অ্যাপস। নামজারি অ্যাপস ভূমি বিষয়ে সকল
+                        প্রকার তথ্য-উপাত্ত দেখা যাবে।</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <div class="modal smt-modal fade" id="khosraInfoModal" tabindex="-1" aria-labelledby="khosraInfoModal"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="khosraInfoModal">খসড়া আবেদন</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>আবেদনের ট্র্যাকিং নম্বর</label>
+                            <input type="text" class="form-control" placeholder="আবেদনের ট্র্যাকিং নম্বরটি দিন">
+                        </div>
+                        <div class="form-group">
+                            <label>ফোন নম্বর</label>
+                            <input type="text" class="form-control"
+                                placeholder="আবেদিত ফরমে ব্যবহৃত মোবাইল নম্বর প্রদান করুন">
+                        </div>
+                        <div class="modal-btn-group">
+                            <a class="btn btn-src">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"
+                                    fill="none">
+                                    <circle cx="6.77466" cy="6.27496" r="5.25" stroke="#ffffff" stroke-width="1.5" />
+                                    <path d="M10.625 10.125L14.3373 13.8373" stroke="#ffffff" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span class="src-btn-text">খুজুন</span>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+<!-- <script src="js/jquery.min.js"></script> -->
+<script src="js/jquery-3.5.0.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/lity.js"></script>
+<script src="js/custom.js?v=20220414740"></script>
+
+</html>
